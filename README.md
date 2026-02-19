@@ -35,7 +35,7 @@ https://codepen.io/mdusmanansari/pen/NWgjZWO
 
 Schetsen gemaakt over hoe ik het wil hebben.
 <img src="/readme-images/schets-pagina-1.jpeg" alt="Eerste schetsen" width="200px">
-<img src="/readme-images/schets-pagina-2.jpeg" alt="Eerste schetsen" width="200px" rotate="90deg">
+<img src="/readme-images/schets-pagina-2.jpeg" alt="Eerste schetsen" width="200px" style="transform: rotate(-45deg);>
 
 
 En daarna met Luna Jay een checkout gedaan.
