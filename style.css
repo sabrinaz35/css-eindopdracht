@@ -14,7 +14,7 @@
     --outer-lines: #181818;
  --background-color:
   linear-gradient(
-    180deg,
+    180deg in oklch,
     rgba(8,178,204,1) 1%,
     rgba(84,212,225,1) 43%,
     rgba(107,222,232,1) 59%,
@@ -34,7 +34,7 @@
     :root {
         --background-color: 
         linear-gradient(
-            180deg,
+            180deg in oklch,
             rgba(42, 14, 143, 1) 1%, 
             rgba(67, 70, 232, 1) 43%, 
             rgba(67, 70, 232, 1) 59%, 
