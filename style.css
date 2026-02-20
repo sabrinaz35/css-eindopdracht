@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light dark;
+
+    /* COLORS */
+    --color-robot: #fafafa;
+    --accent-color-1: #ff80bf;
+    --accent-color-2: #fa439f;
+    --accent-color-3: #a62e8c;
+    --outer-lines: #181818;
+ --background-color:
+  linear-gradient(
+    180deg,
+    rgba(8,178,204,1) 1%,
+    rgba(84,212,225,1) 43%,
+    rgba(107,222,232,1) 59%,
+    rgba(192,225,142,1) 76%,
+    rgba(230,226,101,1) 82%,
+    rgba(83,207,130,1) 83%,
+    rgba(100,206,119,1) 88%,
+    rgba(90,181,78,1) 100%
+  );
+
+    /* SPACINGS */
+
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme  */
+@media(prefers-color-scheme: dark){
+    :root {
+        --background-color: 
+        linear-gradient(
+            180deg,
+            rgba(42, 14, 143, 1) 1%, 
+            rgba(67, 70, 232, 1) 43%, 
+            rgba(67, 70, 232, 1) 59%, 
+            rgba(225, 163, 142, 1) 77%, 
+            rgba(230, 181, 101, 1) 82%, 
+            rgba(49, 125, 78, 1) 83%, 
+            rgba(57, 117, 68, 1) 88%, 
+            rgba(39, 79, 33, 1) 100%);
+    }
+}
+
+/**********************/
+/* Algemene styling   */
+/**********************/
+
+@font-face {
+    /* https://www.1001fonts.com/football-stage-demo-font.html */
+    font-family: Football stage;
+    src: url(/fonts/football-stage-demo.regular.otf);
+}
+
+h1 {
+    font-family: Football stage;
+    letter-spacing: .1rem;
+}
+
+
+/**********************/
+/* STYLING BACKGROUND */
+/**********************/
+main {
+    /* https://cssgradient.io/ */
+    background: var(--background-color);
+    height: 100vh;
+}
+
+
+
+
+/**********************/
+/*    STYLING ROBOT   */
+/**********************/

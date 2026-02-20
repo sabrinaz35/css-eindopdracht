@@ -35,7 +35,7 @@ https://codepen.io/mdusmanansari/pen/NWgjZWO
 
 Schetsen gemaakt over hoe ik het wil hebben.
 <img src="/readme-images/schets-pagina-1.jpeg" alt="Eerste schetsen" width="200px">
-<img src="/readme-images/schets-pagina-2.jpeg" alt="Eerste schetsen" width="200px" style="transform: rotate(-45deg);">
+<img src="/readme-images/schets-pagina-2gedraait.jpeg.jpeg" alt="Eerste schetsen" width="200px">
 
 
 En daarna met Luna Jay een checkout gedaan.
@@ -59,3 +59,25 @@ Wat er allemaal komt kijken bij het maken van carousel en waar je op moet letten
 - De html opzetten op basis van wat ik heb uitgewerkt in de schets.
 - Een start maken aan de css
 
+
+## Feedback coaching weekly 1 - 20 februari
+
+### Proces vrijdag
+Vrijdag ben ik nog verder gegaan aan de css opdracht, ik heb een schets gemaakt om een overzicht te creeëren voor wat ik welke elementen wil gebruiken. Of ik checkboxes en inputs ga gebruiken en waar dat dan zal zijn.
+
+<img src="/readme-images/schets-html.jpeg" alt="Schetsen van html pagina met opbouw html elementen" width="200px">
+
+
+
+## Bronnen
+Color pallete inspo robot:
+https://kr.pinterest.com/pin/634655772531876820/
+
+Fonts: 
+https://www.1001fonts.com/football-stage-demo-font.html
+
+Gradient:
+https://cssgradient.io/ 
+
+CSS elementen:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 
