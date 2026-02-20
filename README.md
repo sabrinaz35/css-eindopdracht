@@ -1,4 +1,4 @@
-# css-eindopdracht
+# css-eindopdracht Week 1
 ## Kennismaking opdracht checkout 0: 18 februari
 ### Wat hebben we gedaan?
 We hebben een gezamenlijke website gemaakt met daarin de details, summary, popover en ook onderdelen van de anchor. Overle gepleegd met daarin de verdeling van de taken en de onderwerpen, ikzelf heb de anchors gedaan. Matthew had de details en summary gedaan en Joshua had de popovers en een beetje de details ook gedaan.
@@ -60,13 +60,25 @@ Wat er allemaal komt kijken bij het maken van carousel en waar je op moet letten
 - Een start maken aan de css
 
 
-## Feedback coaching weekly 1 - 20 februari
-
-### Proces vrijdag
-Vrijdag ben ik nog verder gegaan aan de css opdracht, ik heb een schets gemaakt om een overzicht te creeëren voor wat ik welke elementen wil gebruiken. Of ik checkboxes en inputs ga gebruiken en waar dat dan zal zijn.
+## Weekly reflectie - 20 februari
+Vrijdag ben ik nog verder gegaan aan de css opdracht voorafgaand aan het gesprek, ik heb een schets gemaakt om een overzicht te creeëren voor wat ik welke elementen wil gebruiken. Of ik checkboxes en inputs ga gebruiken en waar dat dan zal zijn.
 
 <img src="/readme-images/schets-html.jpeg" alt="Schetsen van html pagina met opbouw html elementen" width="200px">
 
+Uiteindelijk bleek tijdens het gesprek dat er een andere manier nodig was om het te noteren en dat ik alle elementen moet nesten om zo een soepel bewegende robot kan maken. Dit was wel een handige tip, want ik was hier zelf nooit opgekomen.
+
+Woensdag hadden we natuurlijk dat gezamenlijke opdracht en daar ben ik veel te weten gekomen over anchors en andere nieuwe dingen en mogelijkheden is css. En ik wil anchors als het kan ook gebruiken in mijn website en ook wil ik kijken of ik overweg kan met de make-up van de css.
+
+Donderdag hadden we de presentaties wat naar mijn idee wel goed verliep binnen het groepje hadden we de taken verdeeld en die taak ging ieder ook presenteren. Daarna volgde de kickoff met de opdracht, waarin ik een keuze moest maken. 
+Ik vond dit een ontzettend lastige keuze, maar ben uiteindelijk uitgekomen op de Silly walk, want ik wil meer leren over animatie en hoe je vormen kan maken in css en dat kan perfect met dit project. Daarmee ben ik ook meteen bezig met mijn leerdoel.
+
+Uiteindelijk ben ik vrijdag zoals ik al zei bezig geweest aan de html en heb ik een gradient toegeveogd als achtergrond.
+
+
+<img src="/readme-images/tussenstand-20feb.png" alt="achtergrond met gradient light" width="200px">
+
+ook heb ik een darkmode al toegeveogd
+<img src="/readme-images/tussenstand-20feb-dark.png" alt="achtergrond met gradient dark" width="200px">
 
 
 ## Bronnen
