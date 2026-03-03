@@ -65,7 +65,7 @@ Vrijdag ben ik nog verder gegaan aan de css opdracht voorafgaand aan het gesprek
 
 <img src="/readme-images/schets-html.jpeg" alt="Schetsen van html pagina met opbouw html elementen" width="200px">
 
-Uiteindelijk bleek tijdens het gesprek dat er een andere manier nodig was om het te noteren en dat ik alle elementen moet nesten om zo een soepel bewegende robot kan maken. Dit was wel een handige tip, want ik was hier zelf nooit opgekomen.
+Uiteindelijk bleek tijdens het gesprek dat er een andere manier nodig was om het te noteren en dat ik alle elementen moet nesten om zo een soepel bewegende robot kan maken. Dit was wel een handige tip, want ik was hier zelf nooit opgekomen. 
 
 Woensdag hadden we natuurlijk dat gezamenlijke opdracht en daar ben ik veel te weten gekomen over anchors en andere nieuwe dingen en mogelijkheden is css. En ik wil anchors als het kan ook gebruiken in mijn website en ook wil ik kijken of ik overweg kan met de make-up van de css.
 
@@ -77,8 +77,13 @@ Uiteindelijk ben ik vrijdag zoals ik al zei bezig geweest aan de html en heb ik 
 
 <img src="/readme-images/tussenstand-20feb.png" alt="achtergrond met gradient light" width="200px">
 
-ook heb ik een darkmode al toegeveogd
+Ook heb ik een darkmode al toegeveogd
 <img src="/readme-images/tussenstand-20feb-dark.png" alt="achtergrond met gradient dark" width="200px">
+
+Uiteindelijk wat ik had in mijn html code wat ik nog moet gaan aanpassen op basis van de feedback:
+
+<img src="/readme-images/html-opbouw-1.png" alt="mijn eerste opbouw van de html" width="200px">
+
 
 
 ## Bronnen
