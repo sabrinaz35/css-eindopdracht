@@ -26,7 +26,6 @@ Ik heb ontzettend veel geleerd over de anchor, het is ontzettend veel en er komt
 
 
 ## Kennismaking opdracht checkout 1: 19 februari
-
 ### Wat hebben we gedaan?
 Presentaties gedaan over de anchors en de andere presentaties bijgewoond. Verder beetje ingelezen op de weekly nerd, kickoff gehad en bedenken welk onderwerp/opdracht ik ga kiezen.
 
@@ -85,6 +84,33 @@ Uiteindelijk wat ik had in mijn html code wat ik nog moet gaan aanpassen op basi
 <img src="/readme-images/html-opbouw-1.png" alt="mijn eerste opbouw van de html" width="200px">
 
 
+## Kennismaking opdracht checkout 1: 19 februari
+Samen met Jacco besproken, hij maakt een gameboy en heeft vandaag gewerkt aan de eerste vormen neerzetten. Als feedback kreeg ik dat ik misschien op de vampier modus hem iets kan laten aanvallen.
+
+### Wat hebben we gedaan?
+Ik heb vandaag gewerkt aan het maken van mijn robot, ik heb nog nooit een vorm gemaakt met css vanuit niks. Dus dat was in de ochtend wel een challenge. Ik was namelijk begonnen met een clip path alleen daardoor zag ik mijn andere elementen niet meer, dit duurde even voordat ik dit door had. 
+<img src="/readme-images/clip-path-werkt-niet.png" alt="foto van code clip-path" width="200px">
+
+Uiteindelijk wees Maja mij erop wat de clip path deed en waardoor je eigenlijk een deel wegsnijd. Daarna heb ik gespeeld met de vormen maken en de transform origin met hoe dat werkt.
+<img src="/readme-images/4-03-tussenstand.png" alt="tussenstand van de robot" width="200px">
+
+### Hoelang heeft dat geduurd?
+- 09:30 - 10:45 Weekly nerd Nils Binder
+- 10:45 - 12:30 Werken aan de body en hoofd van de robot
+- 12:30 - 13:30 Pauze
+- 13:30 - 16:00 Verder gewerkt aan mijn robot en armen gemaakt, en gespeeld en probeerd met transform origin. 
+- 16:00 checkout
+
+### Wat heb ik geleerd?
+Dat het handig is om dingen te nesten, ik heb vandaag de transform origin onderzocht en daarbij bij het genestte element de inherit gegeven en dan draait hij op de juiste manier mee.
+
+Ook ben ik bezig geweest met het maken va
+
+### Wat ga je morgen doen?
+Morgen wil ik verder met:
+- De benen van de robot
+- misschien kijken naar verfijnen van de look en een beetje met shadows werken
+- Eerste walking animatie maken
 
 ## Bronnen
 Color pallete inspo robot:
