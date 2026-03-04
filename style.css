@@ -70,6 +70,8 @@ main {
     /* https://cssgradient.io/ */
     background: var(--background-color);
     height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 10fr;
 }
 
 
@@ -79,16 +81,145 @@ main {
 /*    STYLING ROBOT   */
 /**********************/
 
-torso {
+
+/* Styling torso */
+main > div {
+    position: absolute;
+    top: 40%;
+    right: 30%;
     width: 200px;
-    height: 400px;
-    clip-path: ellipse(25% 40% at 50% 50%);
+    height: 300px;
+    background-color: var(--color-robot);
+    /* https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 */
+    border-radius: 51% 49% 49% 51% / 35% 35% 65% 65%;
+
+    & input[type="checkbox"] {
+        /* algemene positie */
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        appearance: none;
+
+        /* Algemene styling button */
+            &::before {
+            position: absolute;
+            content:" ";
+            width: 15px;
+            height: 15px;
+            border: solid 1px var(--outer-lines);
+            border-radius: 25%;
+            }
+
+            &:checked::after {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 25%;
+                background-color: var(--accent-color-3);
+            }
+
+            & + input[type="checkbox"] {
+                left: 20%;
+            }
+    }
 }
 
-hoofd {
-    content: " ";
-    width: 20px;
-    height: 20px;
+
+/* Styling hoofd */
+div form {
+    display: block;
+    position: absolute;
+    top: -150px;
+    right: -10px;
+    width: 220px;
+    height: 150px;
+    border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
     background-color: var(--color-robot);
 
+    & > input[type="checkbox"] {
+        position: absolute;
+        top: -40px;
+        left: 95px;
+
+        &::before {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: none;
+            background-color: var(--color-robot);
+        }
+
+        &::after {
+            position: absolute;
+            bottom: -40px;
+            left: 5px;
+            content:" ";
+            width: 5px;
+            height: 25px;
+            background-color: var(--color-robot);
+        }
+    }
+
+    & > div {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        width: 150px;
+        height: 60px;
+        background-color: var(--accent-color-1);
+        border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
+
+        & > input[type="checkbox"]{
+            left: 50%;
+            top: 10px;
+
+            &::before {
+                border-radius: 50%;
+                padding: 10px;
+            }
+
+            &:checked::after {
+                content:" ";
+                top: 8px;
+                left: 8px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: var(--outer-lines);
+            }
+        }
+    }
+
 }
+
+/* Styling armen */ 
+
+main > div > div:nth-of-type(2), main > div > div:nth-of-type(3) {
+    content:" ";
+    position: absolute;
+    width: 175px;
+    height: 50px;
+    background-color: #ff80bf;
+    border-radius:  80% 20% 19% 81% / 60% 48% 52% 40%;
+    transform: rotate(-45deg);
+
+    & > div {
+        
+    }
+
+}
+
+main > div > div:nth-of-type(2) {
+    top: 50px;
+    left: -130px;
+}
+
+main > div > div:nth-of-type(3) {
+    top: 50px;
+    right: -130px;
+    transform: rotate(225deg);
+}
+
+/* main > div > div:nth-of-type(3) {
+    transform: rotate(45deg);
+    transform-origin: left;
+} */

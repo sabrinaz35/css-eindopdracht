@@ -98,3 +98,6 @@ https://cssgradient.io/
 
 CSS elementen:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 
+
+Border-radius generator:
+- https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 
