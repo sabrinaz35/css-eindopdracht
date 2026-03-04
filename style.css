@@ -240,7 +240,7 @@ main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
     border-radius: 50%;
     transform: translateY(6px);
 
-    &last-of-type {
+    &:not(:has(div)){
         width: 100px;
     }
 }
