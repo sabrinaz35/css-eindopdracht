@@ -12,6 +12,7 @@
     --accent-color-2: #fa439f;
     --accent-color-3: #a62e8c;
     --outer-lines: #181818;
+
  --background-color:
   linear-gradient(
     180deg in oklch,
@@ -77,3 +78,17 @@ main {
 /**********************/
 /*    STYLING ROBOT   */
 /**********************/
+
+torso {
+    width: 200px;
+    height: 400px;
+    clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+hoofd {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-robot);
+
+}
