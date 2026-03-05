@@ -48,7 +48,7 @@
 }
 
 /**********************/
-/* Algemene styling   */
+/* MARK:Algemene styling 
 /**********************/
 
 @font-face {
@@ -64,7 +64,7 @@ h1 {
 
 
 /**********************/
-/* STYLING BACKGROUND */
+/* MARK:STYLING BACKGROUND 
 /**********************/
 main {
     /* https://cssgradient.io/ */
@@ -78,10 +78,8 @@ main {
 
 
 /**********************/
-/*    STYLING ROBOT   */
+/*    MARK:STYLING ROBOT   
 /**********************/
-
-
 /* Styling torso */
 main > div {
     position: absolute;
@@ -95,7 +93,13 @@ main > div {
 
     scale: .65;
 
-    & input[type="checkbox"] {
+    animation-name: --torso;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; 
+
+    input[type="checkbox"] {
         /* algemene positie */
         position: absolute;
         top: 20%;
@@ -127,7 +131,24 @@ main > div {
 }
 
 
-/* Styling hoofd */
+@keyframes --torso {
+    0% {
+        rotate: 0;
+    } 25% {
+        rotate: 1deg;
+    } 50%{
+        rotate: 2deg;
+    } 75% {
+        rotate: 1deg;
+    } 100% {
+        rotate: 0;
+    }
+}
+
+
+/**********************/
+/*    MARK:Styling hoofd
+/**********************/
 div form {
     display: block;
     position: absolute;
@@ -139,7 +160,7 @@ div form {
     background-color: var(--color-robot);
 
     /* STYLING ANTENNE */
-    & > input[type="checkbox"] {
+    > input[type="checkbox"] {
         position: absolute;
         top: -40px;
         left: 95px;
@@ -164,7 +185,7 @@ div form {
     }
 
     /* STYLING OGEN */
-    & > div {
+    > div {
         position: absolute;
         left: 40px;
         top: 40px;
@@ -173,13 +194,23 @@ div form {
         background-color: var(--accent-color-1);
         border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
 
-        & > input[type="checkbox"]{
+
+
+        > input[type="checkbox"]{
+            --blink-duration: 1.5s;
+
             left: 50%;
             top: 10px;
 
             &::before {
                 border-radius: 50%;
                 padding: 10px;
+
+                animation-name: --blink;
+                animation-duration: var(--blink-duration);
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;  
             }
 
             &:checked::after {
@@ -189,27 +220,43 @@ div form {
                 padding: 5px;
                 border-radius: 50%;
                 background-color: var(--outer-lines);
+
+                animation-name: --blink;
+                animation-duration: var(--blink-duration);
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate; 
             }
         }
     }
 
-    /* STYLING MONF */
-    & > input[type="checkbox"]:nth-of-type(2)::before {
+    > input[type="checkbox"]:nth-of-type(2)::before {
         position: absolute;
-        top: 150px;
+        top: 130px;
         left: -30px;
         width: 100px;
-        height: 5px;
+        height: 50px;
         border: none;
         background-color: var(--accent-color-1);
+        /* Met behulp van https://bennettfeely.com/clippy/ de basis gemaakt, maar zelf geperfectioneerd */
+        clip-path: polygon(9% 39%, 8% 48%, 12% 55%, 18% 61%, 26% 64%, 34% 66%, 46% 67%, 60% 66%, 71% 64%, 80% 58%, 83% 52%, 84% 43%, 83% 40%, 70% 43%, 70% 43%, 45% 45%, 34% 44%, 20% 42%);
     }
-
 }
 
+@keyframes --blink {
+    0% {
+        transform:scaleY(1);
+    } 92% {
+        transform:scaleY(1);
+    } 100% {
+        transform:scaleY(.1);
+    } 
+}
 
-
-/* Styling armen */ 
-main > div > div:nth-of-type(2), main > div > div:nth-of-type(3) {
+/**********************/
+/*    MARK:Styling armen  
+/**********************/
+main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
     content:" ";
     position: absolute;
     width: 150px;
@@ -219,7 +266,8 @@ main > div > div:nth-of-type(2), main > div > div:nth-of-type(3) {
     transform: rotate(125deg);
     transform-origin: left;
 
-    & > div {
+
+    > div {
         position: absolute;
         width: 100px;
         height: 50px;
@@ -231,7 +279,26 @@ main > div > div:nth-of-type(2), main > div > div:nth-of-type(3) {
         border-radius: 50%;
         transform-origin: inherit;
     }
+}
 
+main > div > div:nth-of-type(2) {
+    animation-name: --swingArmLinks;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes --swingArmLinks {
+    0% {
+        rotate: 0;
+    } 25% {
+        rotate: 90deg;
+    } 50%{
+        rotate: -90deg;
+    }  100% {
+        rotate: 0;
+    }
 }
 
 main > div > div:nth-of-type(2) { 
@@ -245,7 +312,9 @@ main > div > div:nth-of-type(3) {
 }
 
 
-/* Styling benen */ 
+/**********************/
+/*    MARK:Styling benen  
+/**********************/
 main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
     content: " ";
     width: 30px;
@@ -259,13 +328,64 @@ main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
     }
 }
 
-main > div > div:nth-of-type(4), main > div > div:nth-of-type(5) {
+/* where waar kan, is alleen hoog nodig */
+main > div > div:where(:nth-of-type(4), :nth-of-type(5)) {
     position: absolute;
     bottom: 5px;
     left: 125px;
 }
 
+main > div > div:nth-of-type(4) div {
+    animation-name: --lopendBeenRechts;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; 
+    animation-delay: 2s;
+}
+
+@keyframes --lopendBeenRechts {
+    0% {
+        rotate: 0;
+    } 25% {
+        rotate: 12deg;
+    } 50%{
+        rotate: -5deg;
+    } 75% {
+        rotate: 12deg;
+    } 100% {
+        rotate: 0;
+    }
+}
+
 main > div > div:nth-of-type(5) {
     left: 55px;
+
+    div {
+    animation-name: --lopendBeenLinks;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; 
+    }
 }
+
+
+@keyframes --lopendBeenLinks {
+    0% {
+        rotate: 0;
+    } 25% {
+        rotate: 12deg;
+    } 50%{
+        rotate: -5deg;
+    } 75% {
+        rotate: 12deg;
+    } 100% {
+        rotate: 0;
+    }
+}
+
+
+
+
 

@@ -84,7 +84,7 @@ Uiteindelijk wat ik had in mijn html code wat ik nog moet gaan aanpassen op basi
 <img src="/readme-images/html-opbouw-1.png" alt="mijn eerste opbouw van de html" width="200px">
 
 
-## Kennismaking opdracht checkout 1: 19 februari
+## Checkout 1: 4 maart
 Samen met Jacco besproken, hij maakt een gameboy en heeft vandaag gewerkt aan de eerste vormen neerzetten. Als feedback kreeg ik dat ik misschien op de vampier modus hem iets kan laten aanvallen.
 
 ### Wat hebben we gedaan?
@@ -112,6 +112,43 @@ Morgen wil ik verder met:
 - misschien kijken naar verfijnen van de look en een beetje met shadows werken
 - Eerste walking animatie maken
 
+
+## Checkout 2: 5 maart
+Ik heb vandaag de checkout gedaan met Alex, hij maakt 
+
+### Wat hebben we gedaan?
+Vandaag heb ik wat animerende elementen toegeveogd aan mijn robot, ook heb ik een mond gemaakt met clip-path.
+
+### Hoelang heeft dat geduurd?
+- 09:30 - 10:00 check in met selectoren welke wint er 
+- 10:00 - 10:45 Een start gemaakt met de voeten en een beetje een mooiere grootte gegeven.
+- 10:45 - 11:30 workshop animeren met Sanne
+- 11:30 -12:30 gewerkt aan de eerste animatie been en kijken hoe ik dit het beste kon doen
+- 12:30 - 13:30 pauze
+- 13:30 - 14:00 verfijnen van de animatie
+- 14:00 - 14:45 feedback gesprek met Nils over mijn voortgang
+- 14:45 - 16:00 animatie bij andere been toegevoegd en een blink animatie toegevoegd aan mijn robot.
+
+### Wat heb ik geleerd?
+Ik heb geleerd datje keyframes niet kan nesten, ik had dit wel gedaan en het werkte niet. Het duurde best wel lang voordat ik door had wat het probleem was. 
+
+Ook heb ik geleerd dat als je elementen nest, zoals de benen dat ze heel gemakkelijk en soepel te animeren zijn en het er best grappig uitziet.
+
+### Wat ga je morgen doen?
+De volgende keer wil ik in ieder geval mijn eerste silly walk gemaakt hebben en de styling van mijn robot wat mooier maken.
+
+Ik bedacht mij ook tijdens het gesprek van alex dat ik de animaties toegevoegd heb aan de styling pagina, maar dat ik dat beter kan toevoegen in een ander mapje omdat ik verschillende wil maken als iets geklikt is. En dat wordt overzichtelijker dan. 
+
+
+## Weekly checkout 2
+Tijdens het voortgansgesprek zat ik vandaag bij Nils omdat ik had gewisseld met Julius, hij heeft mij goeie feedback punten gegen:
+- Ik zou nog een makkelijke animatie kunnen toevoegen aan de ogen, zodat ze knipperen en het lijkt of hij leeft.
+- Ik zou goed @layers kunnen gebruiken voor de verschillende thema's en ik zou het misschien wel gewoon voor de vormgeving kunnen gebruiken.
+- Delay misschien gebruiken voor het standaard lopen voor het andere been, of iets daarmee doen. Dit zou misschien voor dit project niet helemaal handig zijn.
+- En als laatste had ik gevraagd of ik bij postion absolute beter kan werken met percentages of met px. Hij zei dat je zodra je dan de torso vergroot dat de rest op de juiste punten mee vergroten/verplaatsen. Maar dat dat iets zou zijn voor de toekomst.
+
+
+
 ## Bronnen
 Color pallete inspo robot:
 https://kr.pinterest.com/pin/634655772531876820/
@@ -124,6 +161,8 @@ https://cssgradient.io/
 
 CSS elementen:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 
+
+https://bennettfeely.com/clippy/ 
 
 Border-radius generator:
 - https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 
