@@ -61,6 +61,24 @@
 h1 {
     font-family: Football stage;
     letter-spacing: .1rem;
+    place-self: center;
+
+    &:hover {
+       animation-name: --letterGlow; 
+       animation-duration: 2s;
+       animation-timing-function: linear;
+       animation-iteration-count: infinite;
+    }
+}
+
+@keyframes --letterGlow {
+    0% {
+        text-shadow: 1px 1px 5px var(--accent-color-2);
+    } 50% {
+        text-shadow: 1px 1px 20px var(--accent-color-2);
+    } 100% {
+        text-shadow: 1px 1px 5px var(--accent-color-2);
+    }
 }
 
 
@@ -75,12 +93,23 @@ main {
     grid-template-rows: 1fr 1fr 10fr;
 }
 
+/**********************/
+/*    MARK:STYLING interactive buttons   
+/**********************/
+
+main > form:first-of-type {
+    place-self: center;
+    /* is scale een juiste om te gebruiken of kan ik beter font-size gebruiken? */
+    scale: 1.5;
+}
+
 
 
 
 /**********************/
 /*    MARK:STYLING ROBOT   
 /**********************/
+
 /* Styling torso */
 main > div {
     position: absolute;
@@ -188,7 +217,12 @@ div form {
 
         &:checked::before {
             background-color: var(--accent-color-2);
-            box-shadow: 1px 1px 15px 10px var(--accent-color-2);
+            /* box-shadow: 1px 1px 15px 10px var(--accent-color-2); */
+            animation-name: --pulsingGlow;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: alternate; 
         }
     }
 
@@ -262,6 +296,16 @@ div form {
     } 
 }
 
+@keyframes --pulsingGlow {
+    0% {
+        box-shadow: 1px 1px 15px 13px var(--accent-color-2);
+    } 50% {
+        box-shadow: 1px 1px 20px 7px var(--accent-color-2);
+    } 100% {
+        box-shadow: 1px 1px 15px 13px var(--accent-color-2);
+    }
+}
+
 /**********************/
 /*    MARK:Styling armen  
 /**********************/
@@ -294,23 +338,44 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
 
 main > div > div:nth-of-type(2) {
     animation-name: --swingArmLinks;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
+    animation-timing-function: linear; 
+}
+
+/* tijdelijke */
+main > div > div:nth-of-type(3) {
+    animation-name: --swingArmRechts;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
 }
 
 @keyframes --swingArmLinks {
     0% {
         rotate: 0;
     } 25% {
-        rotate: 90deg;
+        rotate: 30deg;
     } 50%{
-        rotate: -90deg;
-    }  100% {
+        rotate: -60deg;
+    } 100% {
         rotate: 0;
     }
 }
+
+@keyframes --swingArmRechts {
+    0% {
+        rotate: 0;
+    } 25% {
+        rotate: -60deg;
+    } 50%{
+        rotate: 30deg;
+    } 100% {
+        rotate: 0;
+    }
+}
+
+
 
 main > div > div:nth-of-type(2) { 
     left: 10px;
