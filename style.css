@@ -112,9 +112,7 @@ main > form:first-of-type {
 
 /* Styling torso */
 main > div {
-    position: absolute;
-    top: 40%;
-    right: 30%;
+    place-self: center;
     width: 200px;
     height: 300px;
     background-color: var(--color-robot);
