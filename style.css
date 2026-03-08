@@ -7,11 +7,12 @@
     color-scheme: light dark;
 
     /* COLORS */
-    --color-robot: #fafafa;
-    --accent-color-1: #ff80bf;
+    --color-robot: light-dark(#fafafa, grey);
+    --accent-color-1: light-dark(#ff80bf, #ce02f1);
     --accent-color-2: #fa439f;
     --accent-color-3: #a62e8c;
     --outer-lines: #181818;
+    --color-shadow: light-dark(grey, #000); 
 
  --background-color:
   linear-gradient(
@@ -90,7 +91,7 @@ main > div {
     background-color: var(--color-robot);
     /* https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 */
     border-radius: 51% 49% 49% 51% / 35% 35% 65% 65%;
-    box-shadow: inset 2px -3px 22px 3px grey;
+    box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
 
     scale: .65;
 
@@ -159,7 +160,7 @@ div form {
     height: 150px;
     border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
     background-color: var(--color-robot);
-    box-shadow: inset 2px -3px 22px 3px grey;
+    box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
 
     /* STYLING ANTENNE */
     > input[type="checkbox"] {
@@ -183,6 +184,11 @@ div form {
             width: 5px;
             height: 25px;
             background-color: var(--color-robot);
+        }
+
+        &:checked::before {
+            background-color: var(--accent-color-2);
+            box-shadow: 1px 1px 15px 10px var(--accent-color-2);
         }
     }
 
@@ -264,10 +270,11 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
     position: absolute;
     width: 150px;
     height: 50px;
-    background-color: #ff80bf;
-    border-radius: 50%;
+    background-color: var(--color-robot);
+    border-radius: 30% 30% 50% 30%;
     transform: rotate(125deg);
     transform-origin: left;
+    box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
 
 
     > div {
@@ -279,8 +286,9 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
         left: 130px;
         background-color: var(--color-robot);
         transform: rotate(-60deg);
-        border-radius: 50%;
+        border-radius: 30% 50% 50% 50%;
         transform-origin: inherit;
+         box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
     }
 }
 
