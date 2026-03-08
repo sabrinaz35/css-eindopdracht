@@ -90,6 +90,7 @@ main > div {
     background-color: var(--color-robot);
     /* https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 */
     border-radius: 51% 49% 49% 51% / 35% 35% 65% 65%;
+    box-shadow: inset 2px -3px 22px 3px grey;
 
     scale: .65;
 
@@ -158,6 +159,7 @@ div form {
     height: 150px;
     border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
     background-color: var(--color-robot);
+    box-shadow: inset 2px -3px 22px 3px grey;
 
     /* STYLING ANTENNE */
     > input[type="checkbox"] {
@@ -193,6 +195,7 @@ div form {
         height: 60px;
         background-color: var(--accent-color-1);
         border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
+        box-shadow: 1px 1px 15px -1px var(--accent-color-2);
 
 
 
