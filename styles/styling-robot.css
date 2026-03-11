@@ -1,131 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    color-scheme: light dark;
-
-    /* COLORS */
-    --color-robot: light-dark(#fafafa, grey);
-    --accent-color-1: light-dark(#ff80bf, #ce02f1);
-    --accent-color-2: #fa439f;
-    --accent-color-3: #a62e8c;
-    --outer-lines: #181818;
-    --color-shadow: light-dark(grey, #000); 
-
- --background-color:
-  linear-gradient(
-    180deg in oklch,
-    rgba(8,178,204,1) 1%,
-    rgba(84,212,225,1) 43%,
-    rgba(107,222,232,1) 59%,
-    rgba(192,225,142,1) 76%,
-    rgba(230,226,101,1) 82%,
-    rgba(83,207,130,1) 83%,
-    rgba(100,206,119,1) 88%,
-    rgba(90,181,78,1) 100%
-  );
-
-    /* SPACINGS */
-
-}
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme  */
-@media(prefers-color-scheme: dark){
-    :root {
-        --background-color: 
-        linear-gradient(
-            180deg in oklch,
-            rgba(42, 14, 143, 1) 1%, 
-            rgba(67, 70, 232, 1) 43%, 
-            rgba(67, 70, 232, 1) 59%, 
-            rgba(225, 163, 142, 1) 77%, 
-            rgba(230, 181, 101, 1) 82%, 
-            rgba(49, 125, 78, 1) 83%, 
-            rgba(57, 117, 68, 1) 88%, 
-            rgba(39, 79, 33, 1) 100%);
-    }
-}
-
-/**********************/
-/* MARK:Algemene styling 
-/**********************/
-
-@font-face {
-    /* https://www.1001fonts.com/football-stage-demo-font.html */
-    font-family: Football stage;
-    src: url(/fonts/football-stage-demo.regular.otf);
-}
-
-h1 {
-    font-family: Football stage;
-    letter-spacing: .1rem;
-    place-self: center;
-
-    &:hover {
-       animation-name: --letterGlow; 
-       animation-duration: 2s;
-       animation-timing-function: linear;
-       animation-iteration-count: infinite;
-    }
-}
-
-@keyframes --letterGlow {
-    0% {
-        text-shadow: 1px 1px 5px var(--accent-color-2);
-    } 50% {
-        text-shadow: 1px 1px 20px var(--accent-color-2);
-    } 100% {
-        text-shadow: 1px 1px 5px var(--accent-color-2);
-    }
-}
-
-
-/**********************/
-/* MARK:STYLING BACKGROUND 
-/**********************/
+/* Hier staat de styling van de robot in en de eerste animaties die je meteen ziet bij binnenkomst*/
 main {
-    /* https://cssgradient.io/ */
-    background: var(--background-color);
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 10fr;
+    /*animation namen variabele*/
+    /* --an-torso */ 
+    /* --an-antenne */
+    /* --an-arm-links */
+    /* --an-arm-rechts */
+    /* --an-been-rechts */
+    /* --an-been-links */
+
+    /* Variabele animatie torso */
+    --ad-torso: 3s;
+    --aIteratetionCount-torso: infinite;
+    --atimingFunction-torso: linear;
+    --aDirection-torso: alternate;
+
+    /* Variabele animatie armen */
+    /* links */
+    --ad-arm-links: 4s;
+    --aIterationCount-arm-links: infinite;
+    --atf-arm-links: linear; 
+
+    /* rechts */
+    --ad-arm-rechts: 4s;
+    --aIterationCount-arm-rechts: infinite;
+    --atf-arm-rechts: linear; 
+
+    /* Variabele animatie benen */
+    /* links */
+    --ad-been-links: 6s;
+    --aIterationCount-been-links: infinite;
+    --atf-been-links: linear;
+   --aDirection-been-links: alternate; 
+    
+    /* Rechts */
+    --ad-been-rechts: 6s;
+    --aIterationCount-been-rechts: infinite;
+    --atf-been-rechts: linear;
+    --aDirection-been-rechts: alternate; 
+    --aDelay-been-rechts: 2s;
+
+
 }
 
-/**********************/
-/*    MARK:STYLING interactive buttons   
-/**********************/
-
-main > form:first-of-type {
-    place-self: center;
-    /* is scale een juiste om te gebruiken of kan ik beter font-size gebruiken? */
-    scale: 1.5;
-}
-
-
-
 
 /**********************/
-/*    MARK:STYLING ROBOT   
+/*    MARK:STYLING TORSO   
 /**********************/
-
 /* Styling torso */
 main > div {
-    place-self: center;
+    place-self: end center;
+    margin-bottom: 3rem;
     width: 200px;
     height: 300px;
-    background-color: var(--color-robot);
-    /* https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 */
-    border-radius: 51% 49% 49% 51% / 35% 35% 65% 65%;
-    box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
-
     scale: .65;
 
-    animation-name: --torso;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    &::before {
+        content:"";
+        position: absolute;
+        background-color: var(--color-robot);
+    /* https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 */
+        border-radius: 51% 49% 49% 51% / 35% 35% 65% 65%;
+        box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
+        width: 100%;
+        height:100%;
+    }
+
+    /* Extra variabele --an voor de veranderende themes voor de torso*/
+    animation-name:var(--an-torso, --torso);
+    animation-duration: var(--ad-torso);
+    animation-iteration-count: var(--aic);
+    animation-timing-function: var(--atf);
     animation-direction: alternate; 
 
     input[type="checkbox"] {
@@ -150,7 +94,6 @@ main > div {
                 width: 10px;
                 height: 10px;
                 border-radius: 25%;
-                background-color: var(--accent-color-3);
             }
 
             & + input[type="checkbox"] {
@@ -216,7 +159,7 @@ div form {
         &:checked::before {
             background-color: var(--accent-color-2);
             /* box-shadow: 1px 1px 15px 10px var(--accent-color-2); */
-            animation-name: --pulsingGlow;
+            animation-name: var(--an-antenne, --pulsingGlow);
             animation-duration: 4s;
             animation-iteration-count: infinite;
             animation-timing-function: ease;
@@ -271,16 +214,23 @@ div form {
         }
     }
 
-    > input[type="checkbox"]:nth-of-type(2)::before {
+    /* mond */
+    > input[type="checkbox"]:nth-of-type(2) {
         position: absolute;
-        top: 130px;
-        left: -30px;
+        top: 110px;
+        left: 66px;
         width: 100px;
-        height: 50px;
-        border: none;
+        height: 25px;
         background-color: var(--accent-color-1);
-        /* Met behulp van https://bennettfeely.com/clippy/ de basis gemaakt, maar zelf geperfectioneerd */
-        clip-path: polygon(9% 39%, 8% 48%, 12% 55%, 18% 61%, 26% 64%, 34% 66%, 46% 67%, 60% 66%, 71% 64%, 80% 58%, 83% 52%, 84% 43%, 83% 40%, 70% 43%, 70% 43%, 45% 45%, 34% 44%, 20% 42%);
+        border-radius: 30% 30% 0 0;
+        border-bottom-style: inset;
+        border-bottom-left-radius: 90%;
+        border-bottom-right-radius: 90%;
+        /* transform: rotate(180deg); */
+
+        &::before {
+            border: none;
+        }
     }
 }
 
@@ -335,18 +285,17 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
 }
 
 main > div > div:nth-of-type(2) {
-    animation-name: --swingArmLinks;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-name: var(--an-arm-links, --swingArmLinks);
+    animation-duration: var(--ad-arm-links);
+    animation-iteration-count: var(--aIterationCount-arm-links);
+    animation-timing-function: var(--atf-arm-links); 
 }
 
-/* tijdelijke */
 main > div > div:nth-of-type(3) {
-    animation-name: --swingArmRechts;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-name: var(--an-arm-rechts, --swingArmRechts);
+    animation-duration: var(--ad-arm-rechts);
+    animation-iteration-count: var(--aIterationCount-arm-rechts);
+    animation-timing-function: var(--atf-arm-rechts); 
 }
 
 @keyframes --swingArmLinks {
@@ -361,6 +310,7 @@ main > div > div:nth-of-type(3) {
     }
 }
 
+
 @keyframes --swingArmRechts {
     0% {
         rotate: 0;
@@ -372,7 +322,6 @@ main > div > div:nth-of-type(3) {
         rotate: 0;
     }
 }
-
 
 
 main > div > div:nth-of-type(2) { 
@@ -405,18 +354,20 @@ main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
 /* where waar kan, is alleen hoog nodig */
 main > div > div:where(:nth-of-type(4), :nth-of-type(5)) {
     position: absolute;
-    bottom: 5px;
+    bottom: -10px;
     left: 125px;
 }
 
-main > div > div:nth-of-type(4) div {
-    animation-name: --lopendBeenRechts;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate; 
-    animation-delay: 2s;
-}
+main > div > div:nth-of-type(4) {
+    z-index: -1;
+    div {
+        animation-name: var(--an-been-rechts, --lopendBeenRechts);
+        animation-duration: var(--ad-been-rechts);
+        animation-iteration-count: var(--aIterationCount-been-rechts);
+        animation-timing-function: var(--atf-been-rechts);
+        animation-direction: var(--aDirection-been-rechts); 
+        animation-delay: var(--aDelay-been-rechts);
+    }}
 
 @keyframes --lopendBeenRechts {
     0% {
@@ -436,11 +387,11 @@ main > div > div:nth-of-type(5) {
     left: 55px;
 
     div {
-    animation-name: --lopendBeenLinks;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate; 
+        animation-name: var(--an-been-links, --lopendBeenLinks);
+        animation-duration: var(--ad-been-links);
+        animation-iteration-count: var(--aIterationCount-been-links);
+        animation-timing-function: var(--atf-been-links);
+        animation-direction: var(--aDirection-been-links); 
     }
 }
 
@@ -458,8 +409,3 @@ main > div > div:nth-of-type(5) {
         rotate: 0;
     }
 }
-
-
-
-
-

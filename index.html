@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/algemene-styling.css">
+    <link rel="stylesheet" href="/styles/styling-robot.css">
+    <link rel="stylesheet" href="/styles/themes-animaties.css">
+
+    <link rel="stylesheet" href="/styles/style.css">
+
     <title>Walking robot</title>
 </head>
 <body>
@@ -16,14 +21,17 @@
         <form action="">
             <!-- https://emojipedia.org/nl voor de emoji's -->
     
-            <label> 🪨
-                <input name="sillyWalkChoice" type="radio">
+            <label> 
+                <input name="sillyWalkChoice" type="radio" value="">
+                🪨
             </label>
-            <label> 🧛🏻‍♀️
-                <input name="sillyWalkChoice" type="radio">
+            <label> 
+                <input name="sillyWalkChoice" type="radio" value="vampire">
+                🧛🏻‍♀️
             </label>
-            <label> 🍾
-                <input name="sillyWalkChoice" type="radio">
+            <label> 
+                <input name="sillyWalkChoice" type="radio" value="">
+                🍾
             </label>
   
 
@@ -36,7 +44,6 @@
                 <!-- gezicht -->
                 <form action="">
                     <input type="checkbox">
-                    </label>
 
                     <!-- Ogen -->
                     <div>
@@ -52,8 +59,8 @@
 
             
             <!-- de buttons op de torso -->
-            <input type="checkbox">
-            <input type="checkbox">
+            <input value="buttonTorso" type="checkbox">
+            <input value="buttonTorso2" type="checkbox">
 
              <!-- Armen -->
              <div> 

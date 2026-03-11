@@ -114,7 +114,7 @@ Morgen wil ik verder met:
 
 
 ## Checkout 2: 5 maart
-Ik heb vandaag de checkout gedaan met Alex, hij maakt 
+Ik heb vandaag de checkout gedaan met Alex.
 
 ### Wat hebben we gedaan?
 Vandaag heb ik wat animerende elementen toegeveogd aan mijn robot, ook heb ik een mond gemaakt met clip-path.
@@ -148,6 +148,32 @@ Tijdens het voortgansgesprek zat ik vandaag bij Nils omdat ik had gewisseld met 
 - En als laatste had ik gevraagd of ik bij postion absolute beter kan werken met percentages of met px. Hij zei dat je zodra je dan de torso vergroot dat de rest op de juiste punten mee vergroten/verplaatsen. Maar dat dat iets zou zijn voor de toekomst.
 
 
+## Checkout 3: 11 maart
+Deze checkout doe ik met Maja. 
+
+### Wat hebben we gedaan?
+Vandaag ben ik bezig geweest met de container style queries, waarbij ik een start heb gemaakt aan mijn robot vampire walk. Ik heb de robot aangepast en hij heeft nu tanden gekregen en ik probeer een spookie sluip walk te maken.
+
+<img src="/readme-images/vampire-teeth-robot.png" alt="robot met vampier tanden" width="200px">
+
+Ook heb ik de code van de rechterarm gefixt, waardoor deze nu achter het lichaam staat.
+
+### Hoelang heeft dat geduurd?
+- 09:30 - 10:30 check in met uitleg over verschillende syntaxen binnen kleur
+- 10:30 - 10:45 uit proberen te zoeken hoe ik dat erm erachter kon krijgen
+- 10:45 - 11:30 workshop container queries met Sanne
+- 11:30 -12:30 variabele aangemaakt en mijn css opgedeeld in meerdere mapjes, omdat dit voor mij zelf ook overzichtelijker is
+- 12:30 - 13:30 pauze
+- 13:30 - 16:00 de mond van de vampier gemaakt en de animatie toegevoegd
+
+### Wat heb ik geleerd?
+Ik heb geleerd hoe je iets achter elkaar kan zetten met een position absolute en blijkbaar is er ook een mogelijkheid om dit te doen met 3d.
+
+En ik heb geleerd hoe ik moet omgaan met container queries.
+
+### Wat ga je morgen doen?
+- morgen ga ik verder met de vampire animatie en wil ik de styling aanpassen op basis van de vampier
+
 
 ## Bronnen
 Color pallete inspo robot:
@@ -155,6 +181,8 @@ https://kr.pinterest.com/pin/634655772531876820/
 
 Fonts: 
 https://www.1001fonts.com/football-stage-demo-font.html
+
+https://www.1001fonts.com/fantasque-sans-mono-font.html 
 
 Gradient:
 https://cssgradient.io/ 
@@ -166,3 +194,4 @@ https://bennettfeely.com/clippy/
 
 Border-radius generator:
 - https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color 

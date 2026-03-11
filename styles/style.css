@@ -1,0 +1,23 @@
+
+/**********************/
+/* MARK:STYLING BACKGROUND 
+/**********************/
+main {
+    /* https://cssgradient.io/ */
+    background: var(--background-color);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 10fr;
+}
+
+/**********************/
+/*    MARK:STYLING interactive buttons   
+/**********************/
+
+main > form:first-of-type {
+    place-self: center;
+    /* is scale een juiste om te gebruiken of kan ik beter font-size gebruiken? */
+    scale: 1.5;
+}
+
+
