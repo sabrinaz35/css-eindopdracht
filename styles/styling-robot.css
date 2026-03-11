@@ -16,12 +16,12 @@ main {
 
     /* Variabele animatie armen */
     /* links */
-    --ad-arm-links: 4s;
+    --ad-arm-links: 2.2s;
     --aIterationCount-arm-links: infinite;
     --atf-arm-links: linear; 
 
     /* rechts */
-    --ad-arm-rechts: 4s;
+    --ad-arm-rechts: 2.2s;
     --aIterationCount-arm-rechts: infinite;
     --atf-arm-rechts: linear; 
 
@@ -38,7 +38,6 @@ main {
     --atf-been-rechts: linear;
     --aDirection-been-rechts: alternate; 
     --aDelay-been-rechts: 2s;
-
 
 }
 

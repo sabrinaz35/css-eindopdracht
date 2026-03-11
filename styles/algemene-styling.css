@@ -65,11 +65,12 @@
     src: url(/fonts/fantasquesansmono-bold.otf);
 }
 
+
 h1 {
     /* font-family: Football stage; */
     font-family: FantasyMonospace, monospace;
     letter-spacing: .1rem;
-    place-self: center;
+    place-self: center center;
 
     &:hover {
        animation-name: --letterGlow; 
@@ -88,3 +89,6 @@ h1 {
         text-shadow: 1px 1px 5px var(--accent-color-2);
     }
 }
+
+
+

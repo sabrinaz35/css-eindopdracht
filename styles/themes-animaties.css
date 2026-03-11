@@ -14,7 +14,7 @@ html:has([value="vampire"]:checked) {
         top: 0;
         background-color: crimson;
         /* z-index: 2; */
-   } */
+   /* } */ 
    
     /* torso */
     /* main > div {
@@ -27,7 +27,7 @@ html:has([value="vampire"]:checked) {
         background-color: crimson;
     
         &::after, &::before {
-        content:"";
+        content:" ";
         position: absolute;
         bottom: -7px;
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color */
