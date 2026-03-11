@@ -175,6 +175,7 @@ En ik heb geleerd hoe ik moet omgaan met container queries.
 - morgen ga ik verder met de vampire animatie en wil ik de styling aanpassen op basis van de vampier
 
 
+
 ## Bronnen
 Color pallete inspo robot:
 https://kr.pinterest.com/pin/634655772531876820/
