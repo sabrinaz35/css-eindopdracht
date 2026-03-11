@@ -5,6 +5,17 @@ html:has([value="vampire"]:checked) {
 
 /* container style queries */
 @container style(--view:vampier) {
+   /* Blood animatie */
+   /* main::before {
+        content: "";
+        position: absolute;
+        width: 100dvw;
+        height: 10dvh;
+        top: 0;
+        background-color: crimson;
+        /* z-index: 2; */
+   } */
+   
     /* torso */
     /* main > div {
         
