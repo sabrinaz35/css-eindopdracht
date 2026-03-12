@@ -20,7 +20,7 @@ main > form:first-of-type {
     scale: 1.5; 
 }
 
-main > label{
+main > label{    
     place-self: center;
        input[type="range"] {
             width: 50dvw;

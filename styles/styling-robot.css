@@ -1,14 +1,6 @@
 /* Hier staat de styling van de robot in en de eerste animaties die je meteen ziet bij binnenkomst*/
 main {
-    /*animation namen variabele*/
-    /* --an-torso: ; */
-    /* --an-antenne */
-    /* --an-arm-links */
-    /* --an-arm-rechts */
-    /* --an-been-rechts: --lopendBeenRechts; */
-    /* --an-been-links */
-
-    /* Variabele animatie */
+  /* Variabele animatie */
     --aIterationCount: infinite;
     --atimingFunction-linear: linear;
     --aDirectionAlternate: alternate;

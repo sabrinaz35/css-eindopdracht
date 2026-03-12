@@ -151,7 +151,7 @@ Tijdens het voortgansgesprek zat ik vandaag bij Nils omdat ik had gewisseld met 
 ## Checkout 3: 11 maart
 Deze checkout doe ik met Maja. 
 
-### Wat hebben we gedaan?
+### Wat heb ik gedaan?
 Vandaag ben ik bezig geweest met de container style queries, waarbij ik een start heb gemaakt aan mijn robot vampire walk. Ik heb de robot aangepast en hij heeft nu tanden gekregen en ik probeer een spookie sluip walk te maken.
 
 <img src="/readme-images/vampire-teeth-robot.png" alt="robot met vampier tanden" width="200px">
@@ -173,6 +173,39 @@ En ik heb geleerd hoe ik moet omgaan met container queries.
 
 ### Wat ga je morgen doen?
 - morgen ga ik verder met de vampire animatie en wil ik de styling aanpassen op basis van de vampier
+
+## Checkout 4: 12 maart
+De checkout heb ik samen gedaan met Joost. 
+
+Vandaag had ik een workshop over lettertype en daarbij had ik wat aantekeningen gemaakt: 
+- https://wakamaifondue.com/ --> hier kan je zien wat je font allemaal kan doen
+- https://www.vectrotype.com/
+- https://www.typearture.com/ 
+- embed code mag niet, maar downloaden van de google fonts wel. Google font mogen wel gebruikt worden voor projecten maar niet later voor echte bedrijven. 
+- Clamp(2em,11vh,20em) mag niet kleiner worden dan 2em en niet groter dan 20em en 11vh dat is ideaal
+- https://fontstand.com/ 
+
+### Wat heb ik gedaan?
+Vandaag ben ik bezig geweest met het maken van het loopje van mijn vampieren loopje. Daarnaas heb ik de achtergrond er ook nog op aangepast en ik wil er nog meer aan vampier look aangeven misschien met een cape ofzoiets.
+
+Daarnaast ben ik ook bezig geweest met de range en nu kan de robot verschillende snelheden lopen. 
+- misschien bij mijn default dan de kleuren van de robot aanpassen.
+Dit werkte alleen niet helemaal dus ben ik bezig geweest me de cape van de robot als hij een vampier is.
+
+
+### Hoelang heeft dat geduurd?
+- 09:30 - 10:30 check in en uitleg over wiskunde in css
+- 10:30 - 12:00 vampire walk gemaakt + de range gefixt
+- 12:00 - 13:00 pauze
+- 13:00 - 14:15 verder werken aan de range en de verschillende contianers daarvoor
+- 14:15 - 15:30 workshop lettertype
+- 15:30 - 16:00 de daily checkout
+- 16:00 - 17:00 weekly nerd
+
+### Wat ga ik morgen doen?
+- derde thema maken van de krab
+- een passende stijl vinden voor mijn default animatie
+- En daarbij nog iets silly's toevoegen
 
 
 
