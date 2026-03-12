@@ -1,43 +1,30 @@
 /* Hier staat de styling van de robot in en de eerste animaties die je meteen ziet bij binnenkomst*/
 main {
     /*animation namen variabele*/
-    /* --an-torso */ 
+    /* --an-torso: ; */
     /* --an-antenne */
     /* --an-arm-links */
     /* --an-arm-rechts */
-    /* --an-been-rechts */
+    /* --an-been-rechts: --lopendBeenRechts; */
     /* --an-been-links */
 
-    /* Variabele animatie torso */
-    --ad-torso: 3s;
-    --aIteratetionCount-torso: infinite;
-    --atimingFunction-torso: linear;
-    --aDirection-torso: alternate;
+    /* Variabele animatie */
+    --aIterationCount: infinite;
+    --atimingFunction-linear: linear;
+    --aDirectionAlternate: alternate;
+
+    /* Variabele torso */
+    --ad-torso: 6s;
 
     /* Variabele animatie armen */
-    /* links */
-    --ad-arm-links: 2.2s;
-    --aIterationCount-arm-links: infinite;
-    --atf-arm-links: linear; 
-
-    /* rechts */
-    --ad-arm-rechts: 2.2s;
-    --aIterationCount-arm-rechts: infinite;
-    --atf-arm-rechts: linear; 
+    --ad-arm-links: 4s;
+    --ad-arm-rechts: 4s;
+    --aIterationCount: infinite;
 
     /* Variabele animatie benen */
-    /* links */
-    --ad-been-links: 6s;
-    --aIterationCount-been-links: infinite;
-    --atf-been-links: linear;
-   --aDirection-been-links: alternate; 
-    
-    /* Rechts */
-    --ad-been-rechts: 6s;
-    --aIterationCount-been-rechts: infinite;
-    --atf-been-rechts: linear;
-    --aDirection-been-rechts: alternate; 
-    --aDelay-been-rechts: 2s;
+    --ad-been-links:4.5s;
+    --ad-been-rechts: 4.5s;
+    --aDelay-been-rechts: 3s;
 
 }
 
@@ -68,7 +55,7 @@ main > div {
     animation-name:var(--an-torso, --torso);
     animation-duration: var(--ad-torso);
     animation-iteration-count: var(--aic);
-    animation-timing-function: var(--atf);
+    animation-timing-function: var( --atimingFunction-linear);
     animation-direction: alternate; 
 
     input[type="checkbox"] {
@@ -286,15 +273,15 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
 main > div > div:nth-of-type(2) {
     animation-name: var(--an-arm-links, --swingArmLinks);
     animation-duration: var(--ad-arm-links);
-    animation-iteration-count: var(--aIterationCount-arm-links);
-    animation-timing-function: var(--atf-arm-links); 
+    animation-iteration-count: var(--aIterationCount);
+    animation-timing-function: var( --atimingFunction-linear); 
 }
 
 main > div > div:nth-of-type(3) {
     animation-name: var(--an-arm-rechts, --swingArmRechts);
     animation-duration: var(--ad-arm-rechts);
-    animation-iteration-count: var(--aIterationCount-arm-rechts);
-    animation-timing-function: var(--atf-arm-rechts); 
+    animation-iteration-count: var(--aIterationCount);
+    animation-timing-function: var( --atimingFunction-linear); 
 }
 
 @keyframes --swingArmLinks {
@@ -348,6 +335,11 @@ main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
     &:not(:has(div)){
         width: 50px;
     }
+
+      > div > div > div > div > div > div > div > div > div > div {
+        animation: none;
+
+    }
 }
 
 /* where waar kan, is alleen hoog nodig */
@@ -362,9 +354,9 @@ main > div > div:nth-of-type(4) {
     div {
         animation-name: var(--an-been-rechts, --lopendBeenRechts);
         animation-duration: var(--ad-been-rechts);
-        animation-iteration-count: var(--aIterationCount-been-rechts);
-        animation-timing-function: var(--atf-been-rechts);
-        animation-direction: var(--aDirection-been-rechts); 
+        animation-iteration-count: var(--aIterationCount);
+        animation-timing-function: var( --atimingFunction-linear);
+        animation-direction: var(--aDirectionAlternate); 
         animation-delay: var(--aDelay-been-rechts);
     }}
 
@@ -388,9 +380,9 @@ main > div > div:nth-of-type(5) {
     div {
         animation-name: var(--an-been-links, --lopendBeenLinks);
         animation-duration: var(--ad-been-links);
-        animation-iteration-count: var(--aIterationCount-been-links);
-        animation-timing-function: var(--atf-been-links);
-        animation-direction: var(--aDirection-been-links); 
+        animation-iteration-count: var(--aIterationCount);
+        animation-timing-function: var( --atimingFunction-linear);
+        animation-direction: var(--aDirectionAlternate); 
     }
 }
 
@@ -406,5 +398,67 @@ main > div > div:nth-of-type(5) {
         rotate: 12deg;
     } 100% {
         rotate: 0;
+    }
+}
+
+/**********************/
+/* MARK: range animation */
+/**********************/
+@container style(--fastWalk >= 2) {
+    main {
+    /* Variabele animatie armen */
+    --ad-arm-links: 2.25s;
+    --ad-arm-rechts: 2.25s;
+
+    /* Variabele animatie benen */
+    --ad-been-links:3.5s;
+    --ad-been-rechts: 3.5s;
+    --aDelay-been-rechts: 2s;
+    }
+}
+
+@container style(--fastWalk >= 4) {
+    main {
+    --ad-arm-links: 1.25s;
+    --ad-arm-rechts: 1.25s;
+
+    --ad-been-links:2.5s;
+    --ad-been-rechts: 2.5s;
+    --aDelay-been-rechts: 1s;
+    }
+}
+
+@container style(--fastWalk >= 6) {
+    main {
+    --ad-arm-links: 1s;
+    --ad-arm-rechts: 1s;
+
+    --ad-been-links:2s;
+    --ad-been-rechts: 2s;
+    --aDelay-been-rechts: .75s;
+    }
+}
+
+
+@container style(--fastWalk >= 8) {
+    main {
+    --ad-arm-links: .75s;
+    --ad-arm-rechts: .75s;
+
+    --ad-been-links:1.5s;
+    --ad-been-rechts: 1.5s;
+    --aDelay-been-rechts: .5s;
+    }
+}
+
+
+@container style(--fastWalk >= 10) {
+    main {
+    --ad-arm-links: .5s;
+    --ad-arm-rechts: .5s;
+  
+    --ad-been-links: 1s;
+    --ad-been-rechts: 1s;
+    --aDelay-been-rechts: .25s;
     }
 }

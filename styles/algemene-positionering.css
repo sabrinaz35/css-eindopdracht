@@ -1,0 +1,52 @@
+
+/**********************/
+/* MARK:STYLING BACKGROUND 
+/**********************/
+main {
+    /* https://cssgradient.io/ */
+    background: var(--background-color);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr  1fr 10fr;
+}
+
+/**********************/
+/*    MARK:STYLING interactive buttons   
+/**********************/
+
+main > form:first-of-type {
+    place-self: center;
+    /* is scale een juiste om te gebruiken of kan ik beter font-size gebruiken? */
+    scale: 1.5; 
+}
+
+main > label{
+    place-self: center;
+       input[type="range"] {
+            width: 50dvw;
+}
+}
+
+h1 {
+    /* font-family: Football stage; */
+    font-family: FantasyMonospace, monospace;
+    letter-spacing: .1rem;
+    place-self: center center;
+
+    &:hover {
+       animation-name: --letterGlow; 
+       animation-duration: 2s;
+       animation-timing-function: linear;
+       animation-iteration-count: infinite;
+    }
+}
+
+@keyframes --letterGlow {
+    0% {
+        text-shadow: 1px 1px 5px var(--accent-color-2);
+    } 50% {
+        text-shadow: 1px 1px 20px var(--accent-color-2);
+    } 100% {
+        text-shadow: 1px 1px 5px var(--accent-color-2);
+    }
+}

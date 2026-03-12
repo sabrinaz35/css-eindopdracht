@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/algemene-styling.css">
+    <link rel="stylesheet" href="styles/algemene-positionering.css">
     <link rel="stylesheet" href="styles/styling-robot.css">
-    <link rel="stylesheet" href="styles/themes-animaties.css">
-
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/theme-vampier.css">
+    <link rel="stylesheet" href="styles/theme-krab.css">
 
     <title>Walking robot</title>
 </head>
@@ -16,14 +16,13 @@
         <!-- Voor de achtergrond - main -->
         <h1>Welkom bij walky robot</h1>
 
-
         <!-- Buttons met emoji's -->
         <form action="">
             <!-- https://emojipedia.org/nl voor de emoji's -->
     
             <label> 
                 <input name="sillyWalkChoice" type="radio" value="">
-                🪨
+                🚶🏼‍➡️
             </label>
             <label> 
                 <input name="sillyWalkChoice" type="radio" value="vampire">
@@ -31,11 +30,22 @@
             </label>
             <label> 
                 <input name="sillyWalkChoice" type="radio" value="">
-                🍾
+                🦀
             </label>
   
 
-        </form>  
+        </form> 
+
+        <label> 🏃🏼‍♀️‍➡️
+             <input type="range" min="0" max="10" step="2" name="fastWalk" value=".9" list="stripes">
+        </label>
+        <datalist id="stripes">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+        </datalist>
 
 
         <!-- Robot code genest -->
@@ -148,5 +158,6 @@
                 </div>
             </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

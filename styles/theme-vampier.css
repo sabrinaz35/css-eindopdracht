@@ -1,0 +1,245 @@
+html:has([value="vampire"]:checked) {
+    --view:vampier;
+}
+
+
+/* container style queries */
+@container style(--view:vampier) {
+    body {
+        --upperarm-position-transform: rotate(20deg);
+        --underarm-position-transform: rotate(-115deg);
+        --left-position-arms: 150px;
+        --animation-duration: 8s;
+
+        --background-color: 
+        linear-gradient(
+            180deg in oklch,
+            rgba(42, 14, 143, 1) 1%, 
+            rgba(67, 70, 232, 1) 43%, 
+            rgba(67, 70, 232, 1) 59%, 
+            rgba(225, 163, 142, 1) 77%, 
+            rgba(230, 181, 101, 1) 82%, 
+            rgba(49, 125, 78, 1) 83%, 
+            rgba(57, 117, 68, 1) 88%, 
+            rgba(39, 79, 33, 1) 100%);
+
+        h1 {
+            color: white;
+        }
+    }
+
+   
+    /* torso */
+    main > div {
+        animation: --vampierBody var(--animation-duration) infinite linear;
+    }
+
+    /* Hoofd */
+    div form  {
+        animation: --vampierHoofd var(--animation-duration) infinite linear reverse;
+
+        > input[type="checkbox"]:nth-of-type(2){
+            background-color: crimson;
+        
+            &::after, &::before {
+            content:" ";
+            position: absolute;
+            bottom: -7px;
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color */
+            border: 15px solid transparent; 
+            border-top-color: var(--color-tooth);
+            }
+
+            &::before {
+                top: 0px;
+                right: 10px;
+                width: 0;
+                height: 0;
+            }
+
+    }}
+
+    /* arm links */
+    main > div > div:nth-of-type(3) {
+        animation: --VampierArm var(--animation-duration) infinite linear;
+        transform: var(--upperarm-position-transform);
+        left: 145px;
+
+        > div {
+            transform: var(--underarm-position-transform);
+            left: var(--left-position-arms);
+
+        }
+    }
+
+    /* arm rechts */
+    main > div > div:nth-of-type(2) {
+        animation: --VampierArm var(--animation-duration) infinite linear;
+
+        transform: var(--upperarm-position-transform);
+
+        > div {
+            transform: var(--underarm-position-transform);
+            left: var(--left-position-arms); 
+        }
+    }
+
+    /* been links */
+    main > div > div:nth-of-type(5) {
+        animation: --vampierBeenLinks var(--animation-duration) infinite linear;
+
+        div {
+           animation: none;   
+
+            > div > div > div > div > div > div  {
+                animation: --vampierLowerBeenLinks var(--animation-duration) infinite linear;  
+             }
+        }}
+
+    /* been rechts */
+    main > div > div:nth-of-type(4) {
+        animation: --vampierBeenRechts var(--animation-duration) infinite linear;
+    
+        div {
+            animation: none;
+
+            > div > div > div > div > div > div  {
+                animation: --vampierLowerBeenRechts var(--animation-duration) infinite linear;  
+             }
+
+        }
+}
+}
+
+@keyframes --vampierHoofd {
+    0% {
+        rotate:0deg;
+    } 25% {
+       rotate: -10deg;
+    } 50% {
+        rotate:0deg;
+    }75%{
+        rotate:15deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+
+@keyframes --vampierBody {
+    0% {
+        rotate:0deg;
+    } 25% {
+       rotate: -20deg;
+    } 50% {
+        rotate:0deg;
+    }75%{
+        rotate:10deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+
+@keyframes --VampierArm {
+    0% {
+       rotate: 0deg;
+    } 25% {
+        rotate: 10deg;
+    } 50%{
+        rotate: 20deg;
+    } 100% {
+        rotate: 0deg;
+    }
+}
+
+
+@keyframes --vampierBeenLinks {
+    0% {
+        rotate:0deg;
+    } 25% {
+        rotate:50deg;
+    } 50% {
+        rotate:0deg;
+    }75%{
+        rotate:-60deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+@keyframes --vampierBeenRechts {
+    0% {
+        rotate:0deg;
+    } 25% {
+        rotate:-60deg;
+    } 50% {
+        rotate:0deg;
+    }75%{
+        rotate:50deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+@keyframes --vampierLowerBeenLinks {
+    0% {
+        rotate:0deg;
+    } 20% {
+        rotate:0deg;
+    } 40% {
+        rotate:20deg;
+    }60%{
+        rotate:10deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+@keyframes --vampierLowerBeenRechts {
+    0% {
+        rotate:0deg;
+    } 20% {
+        rotate:20deg;
+    } 40% {
+        rotate:20deg;
+    }60%{
+        rotate:0deg;
+    }80% {
+        rotate:10deg;
+    }100% {
+        rotate:0deg;
+    }
+}
+
+
+/* MARK: Faster vampire walk */
+@container style(--fastWalk >= 2) {
+    body {
+        --animation-duration: 4s;
+    }
+}
+
+@container style(--fastWalk >= 4) {
+    body {
+        --animation-duration: 3.25s;
+    }
+}
+
+@container style(--fastWalk >= 6) {
+    body {
+        --animation-duration: 1.75s;
+    }
+}
+
+@container style(--fastWalk >= 8) {
+    body {
+        --animation-duration: 1.5s;
+    }
+}
+
+@container style(--fastWalk >= 10) {
+    body {
+        --animation-duration: 1s;
+    }
+}

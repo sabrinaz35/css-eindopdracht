@@ -64,31 +64,3 @@
     font-family: FantasyMonospace;
     src: url(/fonts/fantasquesansmono-bold.otf);
 }
-
-
-h1 {
-    /* font-family: Football stage; */
-    font-family: FantasyMonospace, monospace;
-    letter-spacing: .1rem;
-    place-self: center center;
-
-    &:hover {
-       animation-name: --letterGlow; 
-       animation-duration: 2s;
-       animation-timing-function: linear;
-       animation-iteration-count: infinite;
-    }
-}
-
-@keyframes --letterGlow {
-    0% {
-        text-shadow: 1px 1px 5px var(--accent-color-2);
-    } 50% {
-        text-shadow: 1px 1px 20px var(--accent-color-2);
-    } 100% {
-        text-shadow: 1px 1px 5px var(--accent-color-2);
-    }
-}
-
-
-
