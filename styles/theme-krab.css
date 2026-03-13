@@ -38,43 +38,59 @@ html:has([value="krab"]:checked) {
 
         /* Hoofd */
     div form  {
-
         right: 30px;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: var(--accent-color-1);
+        }
     }
 
     /* arm rechts */
     main > div > div:nth-of-type(3) {
         left: 280px;
+        transform: rotate(-10deg);
         animation: krabArmMove var(--animation-duration-krab) infinite linear;
     
-        > div::after {
-            content: " ";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background: conic-gradient(transparent 48deg, var(--accent-color-1) 48deg 195deg, var(--accent-color-1) 170deg);
-            border-radius: 50%;
-            top: -20px;
-            right: -60px;
-        }
+        > div{
+            animation: krabLowerArmMoveLinks var(--animation-duration-krab) infinite linear;
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: conic-gradient(transparent 48deg, var(--accent-color-1) 48deg 195deg, var(--accent-color-1) 170deg);
+                border-radius: 50%;
+                top: -20px;
+                right: -60px;
+            }
+    }
     }
 
 
     /* arm links */
     main > div > div:nth-of-type(2) {
+        left:20px;
         transform: rotateY(180deg);
+        animation: krabArmMoveLinks var(--animation-duration-krab) infinite linear;
 
-        > div::after {
-            content: " ";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            /* https://www.youtube.com/watch?v=XMEX9_HvW2k&t=2s */
-            background: conic-gradient(transparent 48deg, var(--accent-color-1) 48deg 195deg, var(--accent-color-1) 170deg);
-            border-radius: 50%;
-            top: -20px;
-            right: -60px;
-             
+        > div{
+            animation: krabLowerArmMoveLinks var(--animation-duration-krab) infinite linear;
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                /* https://www.youtube.com/watch?v=XMEX9_HvW2k&t=2s */
+                background: conic-gradient(transparent 48deg, var(--accent-color-1) 48deg 195deg, var(--accent-color-1) 170deg);
+                border-radius: 50%;
+                top: -20px;
+                right: -60px;
+                
+            }
         }
     }
 
@@ -113,10 +129,44 @@ html:has([value="krab"]:checked) {
     0% {
        rotate: 0deg;
     } 25% {
-        rotate: 10deg;
+        rotate: -30deg;
     } 50%{
         rotate: -50deg;
-    } 100% {
+    } 75% {
+        rotate: -20deg;
+    }100% {
         rotate: 0deg;
+    }
+}
+
+@keyframes krabArmMoveLinks {
+    0% {
+       rotate: 0deg;
+    } 25% {
+        rotate: -30deg;
+    } 50%{
+        rotate: 50deg;
+    } 75% {
+        rotate: -20deg;
+    }100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes krabLowerArmMoveLinks {
+    0% {
+       rotate: -40deg;
+    } 
+    25% {
+        rotate: -20deg;
+    } 
+    50%{
+        rotate: 30deg;
+    } 
+    75% {
+        rotate: -20deg;
+    }
+    100% {
+        rotate: -40deg;
     }
 }
