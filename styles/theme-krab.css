@@ -1,0 +1,71 @@
+html:has([value="krab"]:checked) {
+    --view:krab;
+}
+
+@container style(--view:vampier) {
+    body {
+        --background-color-krab: yellow;
+
+    };
+
+
+    /* torso */
+    main > div {
+
+    }
+
+
+    /* Hoofd */
+    div form  {
+    
+    }
+
+
+    /* arm links */
+    main > div > div:nth-of-type(3) {
+
+        /* onderarm links */
+        > div {
+
+        }
+    }
+
+
+    /* arm rechts */
+    main > div > div:nth-of-type(2) {
+
+        /* onderarm rechts */
+        > div {
+
+        }
+    }
+
+
+    /* been links */
+    main > div > div:nth-of-type(5) {
+
+        div {
+           animation: none;   
+
+           /* Onderbeen Vanaf knie naar beneden */
+            > div > div > div > div > div > div  {
+            
+            }
+        }
+    }
+
+
+
+    /* been rechts */
+    main > div > div:nth-of-type(4) {
+
+        div {
+           animation: none;   
+
+           /* Onderbeen Vanaf knie naar beneden */
+            > div > div > div > div > div > div  {
+            
+            }
+        }
+    }
+}
