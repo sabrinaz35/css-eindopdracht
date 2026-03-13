@@ -45,6 +45,7 @@ html:has([value="krab"]:checked) {
     /* arm rechts */
     main > div > div:nth-of-type(3) {
         left: 280px;
+        animation: krabArmMove var(--animation-duration-krab) infinite linear;
     
         > div::after {
             content: " ";
@@ -62,7 +63,6 @@ html:has([value="krab"]:checked) {
     /* arm links */
     main > div > div:nth-of-type(2) {
         transform: rotateY(180deg);
-    
 
         > div::after {
             content: " ";
@@ -80,7 +80,7 @@ html:has([value="krab"]:checked) {
 
 
     /* been links */
-    main > div > div:nth-of-type(5) {
+    /* main > div > div:nth-of-type(5) {
         
         left: 80px;
 
@@ -91,12 +91,12 @@ html:has([value="krab"]:checked) {
 
             }
         }
-    }
+    } */
 
 
 
     /* been rechts */
-    main > div > div:nth-of-type(4) {
+    /* main > div > div:nth-of-type(4) {
         left: 195px;
         div {
  
@@ -106,7 +106,17 @@ html:has([value="krab"]:checked) {
 
             }
         }
-    };
-};
+    }; */
+}
 
-
+@keyframes krabArmMove {
+    0% {
+       rotate: 0deg;
+    } 25% {
+        rotate: 10deg;
+    } 50%{
+        rotate: -50deg;
+    } 100% {
+        rotate: 0deg;
+    }
+}

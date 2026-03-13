@@ -207,6 +207,10 @@ Dit werkte alleen niet helemaal dus ben ik bezig geweest me de cape van de robot
 - een passende stijl vinden voor mijn default animatie
 - En daarbij nog iets silly's toevoegen
 
+## Weekly checkout 3
+Deze week had ik mijn vampier loopje af en ben ik begonnen aan mijn krab. Als feedback kreeg ik op mijn design dat ik nog een leuke titel moest bedenken en ik moet bloed toevoegen aan mijn vampier.
+
+Verder moet ik nog kijken naar de animatie van mijn krab, de checkboxes op het lichaam van de robot aanvinken en dan wat laten doen, en de titel animeren.
 
 
 ## Bronnen
