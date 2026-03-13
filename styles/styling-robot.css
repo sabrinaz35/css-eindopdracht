@@ -156,7 +156,6 @@ div form {
 
         &:checked::before {
             background-color: var(--accent-color-2);
-            /* box-shadow: 1px 1px 15px 10px var(--accent-color-2); */
             animation-name: var(--an-antenne, --pulsingGlow);
             animation-duration: 4s;
             animation-iteration-count: infinite;

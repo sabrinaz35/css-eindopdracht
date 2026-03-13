@@ -6,46 +6,44 @@ html:has([value="krab"]:checked) {
     body {
         /* https://www.color-hex.com/color-palette/1031416 */
 
-    --color-outer-eyes: light-dark( #f9d4d2, #95c3ff);
-    --color-robot: light-dark(#e6544c, #3373c4);
-    --accent-color-1: light-dark(#db3d35, #1750ac);
-    --accent-color-2: light-dark(#e02920, #003397);
-    /* --accent-color-3: #a62e8c; */
-    --outer-lines: #181818;
-    --color-shadow: light-dark(#e02920, #003397);
+        --color-outer-eyes: light-dark( #f9d4d2, #95c3ff);
+        --color-robot: light-dark(#e6544c, #3373c4);
+        --accent-color-1: light-dark(#db3d35, #1750ac);
+        --accent-color-2: light-dark(#e02920, #003397);
+        /* --accent-color-3: #a62e8c; */
+        --outer-lines: #181818;
+        --color-shadow: light-dark(#e02920, #003397);
 
         --background-color: 
-       linear-gradient(180deg in oklch,rgba(20, 161, 204, 1) 58%,
-       rgba(25, 137, 145, 1) 59%, rgba(25, 137, 145, 1) 63%, 
-       rgba(25, 137, 145, 1) 69%, rgba(31, 157, 166, 1) 81%, 
-       rgba(255, 240, 179, 1) 82%, rgba(255, 240, 179, 1) 85%, 
-       rgba(237, 214, 121, 1) 95%, 
-       rgba(237, 214, 121, 1) 100%);
+        linear-gradient(180deg in oklch,rgba(20, 161, 204, 1) 58%,
+        rgba(25, 137, 145, 1) 59%, rgba(25, 137, 145, 1) 63%, 
+        rgba(25, 137, 145, 1) 69%, rgba(31, 157, 166, 1) 81%, 
+        rgba(255, 240, 179, 1) 82%, rgba(255, 240, 179, 1) 85%, 
+        rgba(237, 214, 121, 1) 95%, 
+        rgba(237, 214, 121, 1) 100%);
+
+        --animation-duration-krab: 4s;
     
-
-
     }
 
 
             
     /* torso */
     main > div {
-        animation: none;
 
-        width: 300px !important;
+        width: 300px;
         height: 200px;
 
     }
 
         /* Hoofd */
     div form  {
-        animation: none;
+
         right: 30px;
     }
 
     /* arm rechts */
     main > div > div:nth-of-type(3) {
-        animation: none;
         left: 280px;
     
         > div::after {
@@ -63,7 +61,7 @@ html:has([value="krab"]:checked) {
 
     /* arm links */
     main > div > div:nth-of-type(2) {
-        animation: none;
+        transform: rotateY(180deg);
     
 
         > div::after {
@@ -76,20 +74,21 @@ html:has([value="krab"]:checked) {
             border-radius: 50%;
             top: -20px;
             right: -60px;
+             
         }
     }
 
 
     /* been links */
     main > div > div:nth-of-type(5) {
-        animation: none; 
+        
         left: 80px;
 
         div {
-        animation: none;   
+  
 
             > div > div > div > div > div > div  {
-                animation: none;
+
             }
         }
     }
@@ -100,12 +99,14 @@ html:has([value="krab"]:checked) {
     main > div > div:nth-of-type(4) {
         left: 195px;
         div {
-        animation: none;   
+ 
 
         
             > div > div > div > div > div > div  {
-                animation: none;
+
             }
         }
     };
-}
+};
+
+
