@@ -6,6 +6,14 @@ html:has([value="vampire"]:checked) {
 /* container style queries */
 @container style(--view:vampier) {
     body {
+        --color-outer-eyes: #db3d35;;
+        --color-robot: light-dark(#fafafa, grey);
+        --accent-color-1: light-dark(#000, #ce02f1);
+        --accent-color-2: light-dark(#e02920, #ce02f1);
+        /* --accent-color-3: #a62e8c; */
+        --outer-lines: #181818;
+        --color-shadow: light-dark(grey, #000);
+
         --upperarm-position-transform: rotate(20deg);
         --underarm-position-transform: rotate(-115deg);
         --left-position-arms: 150px;
@@ -124,7 +132,7 @@ html:has([value="vampire"]:checked) {
              }
 
         }
-}
+    }
 }
 
 

@@ -7,6 +7,7 @@
     color-scheme: light dark;
 
     /* COLORS */
+    --color-outer-eyes: #ff80bf;
     --color-robot: light-dark(#fafafa, grey);
     --accent-color-1: light-dark(#ff80bf, #ce02f1);
     --accent-color-2: #fa439f;
@@ -27,9 +28,6 @@
     rgba(100,206,119,1) 88%,
     rgba(90,181,78,1) 100%
   );
-
-    /* SPACINGS */
-
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme  */

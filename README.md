@@ -219,7 +219,10 @@ https://www.1001fonts.com/football-stage-demo-font.html
 https://www.1001fonts.com/fantasque-sans-mono-font.html 
 
 Gradient:
-https://cssgradient.io/ 
+- https://cssgradient.io/ 
+- https://developer.mozilla.org/en-US/docs/Web/- CSS/Reference/Values/gradient/radial-gradient 
+- https://www.youtube.com/watch?v=cWgb42tUYPA 
+- https://www.youtube.com/watch?v=XMEX9_HvW2k&t=2s
 
 CSS elementen:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 

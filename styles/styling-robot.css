@@ -31,23 +31,25 @@ main > div {
     width: 200px;
     height: 300px;
     scale: .65;
+    background-position: center bottom;
 
     &::before {
         content:"";
         position: absolute;
         background-color: var(--color-robot);
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient */
+        /* https://www.youtube.com/watch?v=cWgb42tUYPA  */
+        background: 
+            radial-gradient(circle at 25% 25%, var(--color-robot), transparent 30%),
+            radial-gradient(circle at 60% 80%, var(--accent-color-1), transparent 50%),
+            linear-gradient(130deg, var(--color-robot) , var(--accent-color-1), var(--accent-color-2));
 
-        /* background:
-            radial-gradient(circle at 30% 25%, var(--color-robot), transparent 40%),
-            radial-gradient(circle at 60% 80%, var(--accent-color-2), transparent 50%),
-            linear-gradient(145deg, #f5f5f5, var(--accent-color-1) , var(--accent-color-2)); */
 
     /* https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 */
         border-radius: 51% 49% 49% 51% / 35% 35% 65% 65%;
-        box-shadow: inset 2px -3px 22px 3px var(--color-shadow, .25);
-        /* box-shadow:
-            inset 10px 10px 20px var(--accent-color-1, 0.25),
-            inset -10px -10px 20px var(--accent-color-1, 0.4); */
+        box-shadow: 
+            inset 5px 5px 10px var(--accent-color-1, .3),
+            inset -15px -15px 10px var(--accent-color-1, .5);
         width: 100%;
         height:100%;
     }
@@ -170,7 +172,7 @@ div form {
         top: 40px;
         width: 150px;
         height: 60px;
-        background-color: var(--accent-color-1);
+        background-color: var(--color-outer-eyes);
         border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
         box-shadow: 1px 1px 15px -1px var(--accent-color-2);
 
@@ -281,14 +283,14 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
 }
 
 main > div > div:nth-of-type(2) {
-    animation-name: var(--an-arm-links, --swingArmLinks);
+    animation-name:  --swingArmLinks;
     animation-duration: var(--ad-arm-links);
     animation-iteration-count: var(--aIterationCount);
     animation-timing-function: var( --atimingFunction-linear); 
 }
 
 main > div > div:nth-of-type(3) {
-    animation-name: var(--an-arm-rechts, --swingArmRechts);
+    animation-name: --swingArmRechts;
     animation-duration: var(--ad-arm-rechts);
     animation-iteration-count: var(--aIterationCount);
     animation-timing-function: var( --atimingFunction-linear); 
@@ -362,7 +364,7 @@ main > div > div:where(:nth-of-type(4), :nth-of-type(5)) {
 main > div > div:nth-of-type(4) {
     z-index: -1;
     div {
-        animation-name: var(--an-been-rechts, --lopendBeenRechts);
+        animation-name: --lopendBeenRechts;
         animation-duration: var(--ad-been-rechts);
         animation-iteration-count: var(--aIterationCount);
         animation-timing-function: var( --atimingFunction-linear);
@@ -388,7 +390,7 @@ main > div > div:nth-of-type(5) {
     left: 55px;
 
     div {
-        animation-name: var(--an-been-links, --lopendBeenLinks);
+        animation-name: --lopendBeenLinks;
         animation-duration: var(--ad-been-links);
         animation-iteration-count: var(--aIterationCount);
         animation-timing-function: var( --atimingFunction-linear);
