@@ -79,11 +79,14 @@ main > div {
             border-radius: 25%;
             }
 
-            &:checked::after {
+            &[value="buttonTorso2"]:checked::after, &[value="buttonTorso"]:checked::after {
                 position: absolute;
+                content:" ";
                 width: 10px;
                 height: 10px;
+                background-color: var(--accent-color-2);
                 border-radius: 25%;
+                box-shadow: 3px 3px 6px 7px var(--accent-color-2);
             }
 
             & + input[type="checkbox"] {
@@ -195,6 +198,9 @@ div form {
             }
 
             &:checked::after {
+                position: absolute;
+                width: 10px;
+                height: 10px;
                 content:" ";
                 top: 8px;
                 left: 8px;
