@@ -29,9 +29,12 @@ main > label{
 
 h1 {
     /* font-family: Football stage; */
-    font-family: FantasyMonospace, monospace;
+    font-family: BitcountPropVariabele, FantasyMonospace, monospace;
     letter-spacing: .1rem;
     place-self: center center;
+    font-size: 2.5rem;
+    margin: 1rem;
+    font-weight: 300;
 
     &:hover {
        animation-name: --letterGlow; 

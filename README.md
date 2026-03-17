@@ -218,9 +218,13 @@ Color pallete inspo robot:
 https://kr.pinterest.com/pin/634655772531876820/
 
 Fonts: 
-https://www.1001fonts.com/football-stage-demo-font.html
+- https://www.1001fonts.com/football-stage-demo-font.html
 
-https://www.1001fonts.com/fantasque-sans-mono-font.html 
+- https://www.1001fonts.com/fantasque-sans-mono-font.html 
+
+- https://fonts.google.com/download/next-steps?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno 
+- https://fonts.google.com/specimen/Rubik+Wet+Paint?categoryFilters=Seasonal:%2FSeasonal%2FHalloween
+- https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype  
 
 Gradient:
 - https://cssgradient.io/ 

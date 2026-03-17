@@ -23,8 +23,11 @@ html:has([value="krab"]:checked) {
         rgba(237, 214, 121, 1) 100%);
 
         --animation-duration-krab: 4s;
-    
     }
+
+   h1 {
+    font-family: danfo;
+   }
 
 
             
@@ -129,33 +132,37 @@ html:has([value="krab"]:checked) {
 
 
     /* been links */
-    /* main > div > div:nth-of-type(5) {
-        
+    main > div > div:nth-of-type(5) {
+         animation: --krabBeenLinks var(--animation-duration) infinite linear;
         left: 80px;
 
         div {
   
 
-            > div > div > div > div > div > div  {
+            > div > div > div > div > div > div > div  {
+                animation: --krabLowerBeenLinks var(--animation-duration) infinite linear;  
 
             }
         }
-    } */
+    }
 
 
 
     /* been rechts */
-    /* main > div > div:nth-of-type(4) {
+    main > div > div:nth-of-type(4) {
         left: 195px;
+         animation: --krabBeenRechts var(--animation-duration) infinite linear;
+
         div {
  
 
         
-            > div > div > div > div > div > div  {
+            > div > div > div > div > div > div > div  {
+                animation: --krabLowerBeenRechts var(--animation-duration) infinite linear;  
 
             }
         }
-    }; */
+    };
 }
 
 @keyframes krabArmMove {
@@ -201,5 +208,66 @@ html:has([value="krab"]:checked) {
     }
     100% {
         rotate: -40deg;
+    }
+}
+
+
+@keyframes --krabBeenLinks {
+    0% {
+        rotate:0deg;
+    } 25% {
+        rotate:50deg;
+    } 50% {
+        rotate:0deg;
+    }75%{
+        rotate:-60deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+@keyframes --krabBeenRechts {
+    0% {
+        rotate:0deg;
+    } 25% {
+        rotate:-60deg;
+    } 50% {
+        rotate:0deg;
+    }75%{
+        rotate:50deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+
+
+@keyframes --krabLowerBeenLinks {
+    0% {
+        rotate:0deg;
+    } 20% {
+        rotate:0deg;
+    } 40% {
+        rotate:20deg;
+    }60%{
+        rotate:10deg;
+    } 100% {
+        rotate:0deg;
+    }
+}
+
+@keyframes --krabLowerBeenRechts {
+    0% {
+        rotate:0deg;
+    } 20% {
+        rotate:20deg;
+    } 40% {
+        rotate:20deg;
+    }60%{
+        rotate:0deg;
+    }80% {
+        rotate:10deg;
+    }100% {
+        rotate:0deg;
     }
 }

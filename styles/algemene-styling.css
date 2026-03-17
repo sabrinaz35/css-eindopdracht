@@ -52,13 +52,20 @@
 /**********************/
 
 @font-face {
-    /* https://www.1001fonts.com/football-stage-demo-font.html */
-    font-family: Football stage;
-    src: url(/fonts/football-stage-demo.regular.otf);
+    /* https://fonts.google.com/selection?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno */
+    font-family: BitcountPropVariabele;
+    src: url(/fonts/BitcountPropDouble-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf)
 }
 
 @font-face {
-    /* https://www.1001fonts.com/fantasque-sans-mono-font.html */
-    font-family: FantasyMonospace;
-    src: url(/fonts/fantasquesansmono-bold.otf);
+    /* https://fonts.google.com/specimen/Rubik+Wet+Paint?categoryFilters=Seasonal:%2FSeasonal%2FHalloween */
+    font-family: RubicWetPaint;
+    src: url(/fonts/RubikWetPaint-Regular.ttf)
+}
+
+
+@font-face {
+     /* https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype */
+    font-family: Danfo;
+    src: url(/fonts/Danfo-Regular-VariableFont_ELSH.ttf)
 }
