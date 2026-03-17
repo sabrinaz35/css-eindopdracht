@@ -34,6 +34,34 @@ html:has([value="vampire"]:checked) {
         h1 {
             color: white;
             font-family: RubicWetPaint, monospace;
+            position: relative;
+
+            span::after {
+                    content: "🩸";
+                    position: absolute;
+                    font-size: 15px;
+                    bottom: 5px;
+
+                    animation: --letterBloodDropsMove  6s infinite linear;
+            
+            }
+
+            span {
+                &:nth-of-type(1)::after{
+                 left:2px;
+                }
+
+                &:nth-of-type(2)::after {
+                    animation-delay: 1s;
+                    right:145px;
+                }
+
+                &:nth-of-type(3)::after {
+                    animation-delay:2s;
+                    right:53px;
+
+                }
+            }
         }
     }
 
@@ -275,6 +303,21 @@ html:has([value="vampire"]:checked) {
         rotate:10deg;
     }100% {
         rotate:0deg;
+    }
+}
+
+@keyframes --letterBloodDropsMove {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        transform: translateY(0);
+        opacity: .25;
+        
+    }100% {
+        transform: translateY(50rem);
+        opacity: 1;
     }
 }
 

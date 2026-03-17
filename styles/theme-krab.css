@@ -23,11 +23,52 @@ html:has([value="krab"]:checked) {
         rgba(237, 214, 121, 1) 100%);
 
         --animation-duration-krab: 4s;
+
+
+        &::after {
+            content: "🐚";
+            font-size: 40px;
+            position: absolute;
+            bottom: 50px;
+            right: 100px;
+        }
     }
 
-   h1 {
-    font-family: danfo;
-   }
+    h1 {
+            color: white;
+            font-family: danfo, monospace;
+            position: relative;
+
+            span::after {
+                    content: "🫧";
+                    position: absolute;
+                    font-size: 20px;
+                    bottom: 5px;
+                    opacity: 0;
+
+                    animation: --letterShell 6s infinite linear;
+            
+            }
+
+            span {
+                &:nth-of-type(1)::after{
+                 left:2px;
+                }
+
+                &:nth-of-type(2)::after {
+                    animation-delay: 1s;
+                    right:145px;
+                }
+
+                &:nth-of-type(3)::after {
+                    animation-delay:2s;
+                    right:53px;
+
+                }
+            }
+        }
+
+
 
 
             
@@ -239,6 +280,29 @@ html:has([value="krab"]:checked) {
         rotate: 5deg;
     } 100% {
         rotate: 0;
+    }
+}
+
+@keyframes --letterShell {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        transform: translateY(0);
+        opacity: .5;
+        font-size: 20px;
+        rotate: 20deg;
+    }70% {
+        rotate: 0deg;
+    } 80% {
+        rotate: 20deg;
+    } 
+    100% {
+        transform: translateY(50rem);
+        opacity: 1;
+        font-size: 50px;
+        rotate: 0deg;
     }
 }
 

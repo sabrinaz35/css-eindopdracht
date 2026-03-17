@@ -2,12 +2,18 @@
 /**********************/
 /* MARK:STYLING BACKGROUND 
 /**********************/
+
+body {
+    overflow: hidden;
+}
+
 main {
     /* https://cssgradient.io/ */
     background: var(--background-color);
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1fr  1fr 10fr;
+
 }
 
 /**********************/
@@ -30,26 +36,26 @@ main > label{
 h1 {
     /* font-family: Football stage; */
     font-family: BitcountPropVariabele, FantasyMonospace, monospace;
-    letter-spacing: .1rem;
     place-self: center center;
     font-size: 2.5rem;
     margin: 1rem;
     font-weight: 300;
 
-    &:hover {
-       animation-name: --letterGlow; 
-       animation-duration: 2s;
-       animation-timing-function: linear;
-       animation-iteration-count: infinite;
-    }
+    animation: robot-title-animation 6s infinite linear;
+    
 }
 
-@keyframes --letterGlow {
+@keyframes robot-title-animation {
     0% {
-        text-shadow: 1px 1px 5px var(--accent-color-2);
+        font-variation-settings: "ELXP" 0,"slnt" -8;
+        font-weight: 200;
     } 50% {
+        font-variation-settings: "ELXP" 77, "slnt" 0;
+        font-weight: 474.75;
+        color: var(--accent-color-2);
         text-shadow: 1px 1px 20px var(--accent-color-2);
     } 100% {
-        text-shadow: 1px 1px 5px var(--accent-color-2);
+        font-variation-settings: "ELXP" 0,"slnt" -8;
+        font-weight: 200;
     }
 }
