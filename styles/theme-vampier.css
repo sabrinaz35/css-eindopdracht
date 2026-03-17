@@ -157,7 +157,7 @@ html:has([value="vampire"]:checked) {
 }
 
 
-/* Keyframes */
+/* MARK:Keyframes */
 @keyframes --vampierHoofd {
     0% {
         rotate:0deg;

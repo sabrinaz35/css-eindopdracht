@@ -240,3 +240,7 @@ https://bennettfeely.com/clippy/
 Border-radius generator:
 - https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color 
+
+
+scalex()
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleX 

@@ -133,17 +133,17 @@ html:has([value="krab"]:checked) {
 
     /* been links */
     main > div > div:nth-of-type(5) {
-         animation: --krabBeenLinks var(--animation-duration) infinite linear;
         left: 80px;
-
+        rotate: 70deg;
+        
         div {
-  
-
-            > div > div > div > div > div > div > div  {
-                animation: --krabLowerBeenLinks var(--animation-duration) infinite linear;  
-
-            }
+            animation: krabBeenLinks var(--animation-duration-krab) infinite linear;
         }
+
+        div:not(:has(div)) {
+            width: 150px;
+        }
+
     }
 
 
@@ -151,20 +151,22 @@ html:has([value="krab"]:checked) {
     /* been rechts */
     main > div > div:nth-of-type(4) {
         left: 195px;
-         animation: --krabBeenRechts var(--animation-duration) infinite linear;
+         /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleX */
+        transform: rotate(-80deg) scaleX(-1);
 
         div {
- 
+            animation: krabBeenRechts var(--animation-duration-krab) infinite linear 1s;
 
-        
-            > div > div > div > div > div > div > div  {
-                animation: --krabLowerBeenRechts var(--animation-duration) infinite linear;  
-
-            }
         }
-    };
+
+        div:not(:has(div)) {
+            width: 150px;
+        }
+    }
 }
 
+
+/* MARK: Keyframes */
 @keyframes krabArmMove {
     0% {
        rotate: 0deg;
@@ -212,62 +214,62 @@ html:has([value="krab"]:checked) {
 }
 
 
-@keyframes --krabBeenLinks {
+@keyframes krabBeenLinks {
     0% {
-        rotate:0deg;
+        rotate: 0;
     } 25% {
-        rotate:50deg;
-    } 50% {
-        rotate:0deg;
-    }75%{
-        rotate:-60deg;
+        rotate: 8deg;
+    } 50%{
+        rotate: 0deg;
+    } 75% {
+        rotate: 8deg;
     } 100% {
-        rotate:0deg;
+        rotate: 0;
     }
 }
 
-@keyframes --krabBeenRechts {
+@keyframes krabBeenRechts {
     0% {
-        rotate:0deg;
+        rotate: 0;
     } 25% {
-        rotate:-60deg;
-    } 50% {
-        rotate:0deg;
-    }75%{
-        rotate:50deg;
+        rotate: 5deg;
+    } 50%{
+        rotate: 0deg;
+    } 75% {
+        rotate: 5deg;
     } 100% {
-        rotate:0deg;
+        rotate: 0;
     }
 }
 
 
-
-@keyframes --krabLowerBeenLinks {
-    0% {
-        rotate:0deg;
-    } 20% {
-        rotate:0deg;
-    } 40% {
-        rotate:20deg;
-    }60%{
-        rotate:10deg;
-    } 100% {
-        rotate:0deg;
+/* MARK: Faster krab walk */
+@container style(--fastWalk >= 2) {
+    body {
+        --animation-duration-krab: 4s;
     }
 }
 
-@keyframes --krabLowerBeenRechts {
-    0% {
-        rotate:0deg;
-    } 20% {
-        rotate:20deg;
-    } 40% {
-        rotate:20deg;
-    }60%{
-        rotate:0deg;
-    }80% {
-        rotate:10deg;
-    }100% {
-        rotate:0deg;
+@container style(--fastWalk >= 4) {
+    body {
+        --animation-duration-krab: 3.25s;
+    }
+}
+
+@container style(--fastWalk >= 6) {
+    body {
+        --animation-duration-krab: 1.75s;
+    }
+}
+
+@container style(--fastWalk >= 8) {
+    body {
+        --animation-duration-krab: 1.5s;
+    }
+}
+
+@container style(--fastWalk >= 10) {
+    body {
+        --animation-duration-krab: 1s;
     }
 }
