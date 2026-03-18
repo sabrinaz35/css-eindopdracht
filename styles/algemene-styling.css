@@ -53,17 +53,17 @@
 @font-face {
     /* https://fonts.google.com/selection?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno */
     font-family: BitcountPropVariabele;
-    src: url(../fonts/bitcountpropdouble-variabele.ttf)
+    src: url(../fonts/bitcountpropdouble-variabele.ttf);
 }
 
 @font-face {
     /* https://fonts.google.com/specimen/Rubik+Wet+Paint?categoryFilters=Seasonal:%2FSeasonal%2FHalloween */
     font-family: RubicWetPaint;
-    src: url(../fonts/rubikwetpaint-regular.ttf)
+    src: url(../fonts/rubikwetpaint-regular.ttf);
 }
 
 @font-face {
      /* https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype */
     font-family: Danfo;
-    src: url(../fonts/danfo-regular-variable-font.ttf)
+    src: url(../fonts/danfo-regular-variable-font.ttf);
 }
