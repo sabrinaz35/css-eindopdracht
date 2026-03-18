@@ -217,6 +217,9 @@ Dit werkte alleen niet helemaal dus ben ik bezig geweest me de cape van de robot
 - 15:30 - 16:00 de daily checkout
 - 16:00 - 17:00 weekly nerd
 
+### Wat heb ik geleerd?
+Ik heb geleerd hoe ik met een range en style queries kan werken. Ook heb ik tijdens de workshop geleerd dat er een handige site is waarin je je variabele font in kan gooien en die geeft je dan terug wat er allemaal mogelijk is. 
+
 ### Wat ga ik morgen doen?
 - derde thema maken van de krab
 - een passende stijl vinden voor mijn default animatie
@@ -246,6 +249,30 @@ Hierboven zie je wat het hoort te zijn, maar daar had ik body staan, daarom kon 
 Die style queries zijn wel onztzettend handig om een deel van je code aan te kunnen passen zoals je wilt. Zodra je de opzet van de querie hebt neergezet kan je zo alles verder invullen net zoals je met een gewoon css bestandje doet.
 
 Volgende week liggen mijn uitdagingen in het kiezen van een titel en daarbij een passende animatie maken, het mooier maken van de krab animatie en bloed toevoegen aan de vampier.
+
+## Checkout 5: 18 maart
+Vandaag heb ik de checkout gedaan met Dylan.
+
+### Wat heb ik gedaan?
+- Ik heb easter eggs eraan toegevoegd door een schelp te veranderen in een krab en die weg te laten lopen als je eroverheen hovert. 
+- Ik heb een achtergrond animatie met bomen en bloemen toegevoegd waardoor het lijkt alsof hij echt loopt.
+
+<img src="/readme-images/background-animation.png" alt="achtergrond animatie" width="200px">
+
+
+### Hoelang heeft dat geduurd?
+- 09:30 - 10:30 
+- 10:30 - 12:00 
+- 12:00 - 13:00 pauze
+- 13:00 - 14:15 
+- 14:15 - 15:30 
+- 15:30 - 16:00 
+- 16:00 - 17:00 
+
+### Wat ga ik morgen doen?
+
+
+
 
 ## Weekly checkout 4: eindreflectie
 ### Mijn eindproduct
@@ -289,9 +316,7 @@ https://kr.pinterest.com/pin/634655772531876820/
 
 Fonts: 
 - https://www.1001fonts.com/football-stage-demo-font.html
-
 - https://www.1001fonts.com/fantasque-sans-mono-font.html 
-
 - https://fonts.google.com/download/next-steps?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno 
 - https://fonts.google.com/specimen/Rubik+Wet+Paint?categoryFilters=Seasonal:%2FSeasonal%2FHalloween
 - https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype  
@@ -303,14 +328,12 @@ Gradient:
 - https://www.youtube.com/watch?v=XMEX9_HvW2k&t=2s
 
 CSS elementen:
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 
-
-https://bennettfeely.com/clippy/ 
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 
+- https://bennettfeely.com/clippy/ 
 
 Border-radius generator:
 - https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color 
-
 
 scalex()
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleX 

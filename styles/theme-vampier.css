@@ -33,9 +33,14 @@ html:has([value="vampire"]:checked) {
 
          /* FOOTER ANIMATIE CONTENT CHANGE */
         footer {
-            > div::after {
+             div::after {
                 content: "💀";
             }
+
+
+             div::before {
+                content: "🪾";
+             }
         }
         
          /* ANIMATIE IN HEADER */

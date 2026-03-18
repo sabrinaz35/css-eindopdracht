@@ -24,13 +24,21 @@ html:has([value="krab"]:checked) {
         --animation-duration-krab: 4s;
 
          /* MARK: FOOTER ANIMATIE ICON */
-        footer div::after {
-            content: "🐚";
-            bottom: 30px;
+        footer {
+            
+            div::after {
+                content: "🐚";
+                bottom: 30px;
+                animation:none;
+            }
 
-            animation:none;
-    
-        }
+             div::before {
+                content: "🌴";
+             }
+        
+            }   
+
+        
 
         footer:hover {
             animation: --easterEggKrab 8s linear;

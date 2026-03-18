@@ -131,7 +131,7 @@ h1 {
         font-variation-settings: "ELXP" 0,"slnt" -8;
         font-weight: 200;
     } 50% {
-        font-variation-settings: "ELXP" 77, "slnt" 0;
+        font-variation-settings: "ELXP" 100, "slnt" 0;
         font-weight: 474.75;
         color: var(--accent-color-2);
         text-shadow: 1px 1px 20px var(--accent-color-2);

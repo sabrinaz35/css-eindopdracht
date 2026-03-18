@@ -76,6 +76,10 @@ main > div {
             border-radius: 25%;
             }
 
+            input[value="buttonTorso2"], input[value="buttonTorso"] {
+                    border: solid 1px var(--accent-color-2);
+            }
+
             &[value="buttonTorso2"]:checked::after, &[value="buttonTorso"]:checked::after {
                 position: absolute;
                 content:" ";
@@ -406,7 +410,7 @@ footer {
     z-index:1;
     div::after {
         content: "🌸";
-        font-size: 40px;
+        font-size: 3rem;
         position: absolute;
         bottom: 4.5rem;
         right: 50px;
@@ -414,6 +418,19 @@ footer {
 
         animation: --elementGroundMove var(--animation-ground-duration) infinite linear;
     }
+
+    div::before {
+        content: "🌳";
+        font-size: 15rem;
+        position: absolute;
+        bottom: 4rem;
+        right: -50px;
+        width: 10vw;
+
+        animation: --elementGroundMove var(--animation-ground-duration) infinite linear 1s;
+    }
+
+    
 }
 
 
@@ -421,7 +438,7 @@ footer {
     from{
         transform: translateX(110vw);
     } to {
-        transform: translateX(-100vw);
+        transform: translateX(-150vw);
     }
 }
 
