@@ -255,22 +255,24 @@ Vandaag heb ik de checkout gedaan met Dylan.
 
 ### Wat heb ik gedaan?
 - Ik heb easter eggs eraan toegevoegd door een schelp te veranderen in een krab en die weg te laten lopen als je eroverheen hovert. 
-- Ik heb een achtergrond animatie met bomen en bloemen toegevoegd waardoor het lijkt alsof hij echt loopt.
-
+- Ik heb een achtergrond animatie met bomen en bloemen toegevoegd waardoor het lijkt alsof hij echt loopt. Dat geeft ook meteen een dieper effect aan de hele scene.
 <img src="/readme-images/background-animation.png" alt="achtergrond animatie" width="200px">
+- Mijn font werkte niet in github, hij vond hem in het netwerk ook niet. Nienke had meegekeken alleen die kon het ook niet cinden, dus toch maar weer naar Sanne gegaan.
 
 
 ### Hoelang heeft dat geduurd?
-- 09:30 - 10:30 
-- 10:30 - 12:00 
+- 09:30 - 10:00 Intro
+- 10:30 - 12:00 Gewerkt aan het fixen van mijn font in github
 - 12:00 - 13:00 pauze
-- 13:00 - 14:15 
-- 14:15 - 15:30 
-- 15:30 - 16:00 
-- 16:00 - 17:00 
+- 13:00 - 15:45 Verder werken aan de animaties en die achtergrond animatie toegevoegd
+- 15:45 - 16:00  Checkout + start gemaakt aan aan mijn eindreflectie
+
+### Wat heb ik geleerd?
+Ik heb geleerd dat het in het vervolg handiger is om vh/rem etc. te gebruiken voor maten, ik heb nu veel gebruik gemaakt van pixels en dat voornamelijk bij de robot. Nu heeft het niet echt impact op mijn eindproduct, maar dat zou bij andere projecten weleens het geval kunnen zijn.
+
 
 ### Wat ga ik morgen doen?
-
+De laatste puntjes op de I zetten en alle criteria nog even nalopen om te kijken of ik alles heb.
 
 
 
@@ -281,13 +283,13 @@ Uiteindelijk is mijn eindproduct een silly walk geworden met een identiteitscris
 De verschillende thema's hebben een look wat bij het thema past, en daarbij ook een passende silly walk, wat bij de character past.
 
 Eerst om in te komen ben ik gegaan voor een standaard robot, om te kijken hoe het uberhaupt werkt met het maken van een figuur met alleen css.
-<img src="/readme-images/" alt="Foto van eindthema robot" width="200px">
+<img src="/readme-images/standard-robot-final.png" alt="Foto van eindthema robot" width="200px">
 
 Dat maken van een robot verliep eigenlijk wel goed en ben ik doorgegaan met het maken van een vampier aan de hand van de style queries. De uitdaging hier lag in het kijken naar de elementen die al bestaan en het dan aanpassen, maar toch kijken naar hoe ik de huidige elementen kan gebruiken.
-<img src="/readme-images/" alt="Foto van eindthema vampier" width="200px">
+<img src="/readme-images/vampire-robot-final.png" alt="Foto van eindthema vampier" width="200px">
 
 Als laatste had ik het wel onder de knie het aanpassen van de kleuren, dus ik wilde de robot ook daadwerkelijk op een krab laten lijken. En dat is gelukt.
-<img src="/readme-images/" alt="Foto van eindthema krab" width="200px">
+<img src="/readme-images/krab-robot-final.png" alt="Foto van eindthema krab" width="200px">
 
 ### Reflectie
 Toen ik eenmaal bezig was met het maken van dit project had ik in eerste instantie alles onder elkaar gezet in mijn html, hier kreeg ik snel al te horen dat het niet handig was en dat ik alles moest nesten. Dit zorgde bij mij ervoor dat ik moest uitvinden en experimenteren met hoe ik dan de vormen moest maken en moest positioneren. Ik wilde geen svg's gebruiken, want ik wilde kijken wat er mogelijk is met css alleen. 
@@ -308,7 +310,10 @@ Alleen als ik eerlijk ben kan ik nog wel mijn experimenten wat meer vastleggen i
 
 In de toekomst wil ik nog verder experimenteren met css en kijken wat er daarnaast nog meer mogelijk is, ik denk dat er ook veel meer elementen en mogleijkheden zijn die ik nu nog niet weet. Daarom ben ik wel blij dat die eis er was met nesting en style queries, zo leer je iets nieuws en iets handigs bij. Wellicht wil ik mij ook meer verdiepen in de wiskunde, maar dan meer in mijn vrij tijd, dan kan ik er even rustig voor gaan zitten. 
 
+### Als ik meer tijd had...
+Ik ben trots op wat ik heb gemaakt, maar als er wat meer tijd en ruimte was geweest had ik mij toch wat meer willen verdiepen in de gradients, ik heb nu een gradient gemaakt voor de scharen van de krab en ik ben benieuwd of daar nog meer mogelijk mee is. 
 
+Daarnaast had ik mij misschien nog meer willen verdiepen in hoe je het beste custom properties kan inzetten bij style queries en verschillende bestanden css, soms vond ik dit namelijk nog best verwarrend.
 
 ## Bronnen
 Color pallete inspo robot:
