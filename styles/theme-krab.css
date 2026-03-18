@@ -10,7 +10,6 @@ html:has([value="krab"]:checked) {
         --color-robot: light-dark(#e6544c, #3373c4);
         --accent-color-1: light-dark(#db3d35, #1750ac);
         --accent-color-2: light-dark(#e02920, #003397);
-        /* --accent-color-3: #a62e8c; */
         --outer-lines: #181818;
         --color-shadow: light-dark(#e02920, #003397);
 
@@ -24,27 +23,16 @@ html:has([value="krab"]:checked) {
 
         --animation-duration-krab: 4s;
 
-
-        footer {
-            width: 100%;
-            position: absolute;
-            height: 100px;
-            bottom: 0;
-        }
-
+         /* MARK: FOOTER ANIMATIE ICON */
         footer div::after {
             content: "🐚";
-            font-size: 40px;
-            position: absolute;
             bottom: 30px;
-            right: 50px;
-            width: 10vw;
 
+            animation:none;
+    
         }
 
-
         footer:hover {
-    
             animation: --easterEggKrab 8s linear;
             div::after {
                 content: "🦀";
@@ -52,7 +40,8 @@ html:has([value="krab"]:checked) {
             }}
     }
 
-    h1 {
+     /* TITLE STYLING */
+         h1 {
             color: white;
             font-family: danfo, monospace;
             position: relative;
@@ -85,10 +74,6 @@ html:has([value="krab"]:checked) {
                 }
             }
         }
-
-
-
-
             
     /* torso */
     main > div {
@@ -98,7 +83,7 @@ html:has([value="krab"]:checked) {
 
     }
 
-        /* Hoofd */
+    /* Hoofd */
     div form  {
         right: 30px;
 
@@ -226,6 +211,9 @@ html:has([value="krab"]:checked) {
 
 
 /* MARK: Keyframes */
+ /* De keyframes moeten buiten de style querie gezet worden anders werkt het niet */
+
+/* ARMEN */
 @keyframes krabArmMove {
     0% {
        rotate: 0deg;
@@ -272,7 +260,7 @@ html:has([value="krab"]:checked) {
     }
 }
 
-
+ /* BENEN */
 @keyframes krabBeenLinks {
     0% {
         rotate: 0;
@@ -301,6 +289,8 @@ html:has([value="krab"]:checked) {
     }
 }
 
+
+ /* ANIMATIE BUBBLES UIT LETTERS */
 @keyframes --letterShell {
     0% {
         opacity: 0;
@@ -324,6 +314,7 @@ html:has([value="krab"]:checked) {
     }
 }
 
+ /* KRABBETJE ANIMATIE */
 @keyframes --easterEggKrab{
     from {
         transform: translateX(0);

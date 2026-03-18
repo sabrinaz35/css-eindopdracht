@@ -21,17 +21,22 @@ main {
 }
 
 
+
 /**********************/
 /*    MARK:STYLING TORSO   
 /**********************/
 /* Styling torso */
 main > div {
     place-self: end center;
+    position: fixed;
+    z-index: 2;
     margin-bottom: 3rem;
-    width: 200px;
-    height: 300px;
+    width: 12.5rem;
+    height: 18.75rem;
     scale: .65;
     background-position: center bottom;
+
+    animation: --torso var(--ad-torso) infinite ease-in-out alternate;
 
     &::before {
         content:"";
@@ -53,14 +58,6 @@ main > div {
         width: 100%;
         height:100%;
     }
-
-
-    animation-name: --torso;
-    animation-duration: var(--ad-torso);
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate; 
-
 
     input[type="checkbox"] {
         /* algemene positie */
@@ -95,7 +92,6 @@ main > div {
     }
 }
 
-
 @keyframes --torso {
   0% {
     transform: translateY(0rem) rotate(0deg);
@@ -125,10 +121,10 @@ main > div {
 div form {
     display: block;
     position: absolute;
-    top: -150px;
+    top: -9.5rem;
     right: -10px;
-    width: 220px;
-    height: 150px;
+    width: 13.75rem;
+    height: 9.5rem;
     border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
     background-color: var(--color-robot);
     box-shadow: inset 2px -3px 22px 3px var(--color-shadow);
@@ -136,7 +132,7 @@ div form {
     /* STYLING ANTENNE */
     > input[type="checkbox"] {
         position: absolute;
-        top: -40px;
+        top: -2.5rem;
         left: 95px;
 
         &:first-of-type::before {
@@ -159,11 +155,7 @@ div form {
 
         &:checked::before {
             background-color: var(--accent-color-2);
-            animation-name: var(--an-antenne, --pulsingGlow);
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease;
-            animation-direction: alternate; 
+            animation: --pulsingGlow 4s infinite ease alternate;
         }
     }
 
@@ -178,8 +170,6 @@ div form {
         border-radius: 49% 51% 49% 51% / 60% 48% 52% 40%;
         box-shadow: 1px 1px 15px -1px var(--accent-color-2);
 
-
-
         > input[type="checkbox"]{
             --blink-duration: 1.5s;
 
@@ -189,12 +179,7 @@ div form {
             &::before {
                 border-radius: 50%;
                 padding: 10px;
-
-                animation-name: --blink;
-                animation-duration: var(--blink-duration);
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-                animation-direction: alternate;  
+                animation: --blink var(--blink-duration) infinite linear alternate;
             }
 
             &:checked::after {
@@ -207,12 +192,7 @@ div form {
                 padding: 5px;
                 border-radius: 50%;
                 background-color: var(--outer-lines);
-
-                animation-name: --blink;
-                animation-duration: var(--blink-duration);
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-                animation-direction: alternate; 
+                animation: --blink var(--blink-duration) infinite linear alternate;
             }
         }
     }
@@ -229,11 +209,20 @@ div form {
         border-bottom-style: inset;
         border-bottom-left-radius: 90%;
         border-bottom-right-radius: 90%;
-        /* transform: rotate(180deg); */
 
         &::before {
             border: none;
         }
+    }
+}
+
+@keyframes --hoofdMovement {
+    0%{
+        rotate: 0deg;
+    } 50% {
+        rotate: 45deg;
+    } 100% {
+       rotate: 0deg; 
     }
 }
 
@@ -260,6 +249,8 @@ div form {
 /**********************/
 /*    MARK:Styling armen  
 /**********************/
+
+ /* ALGEMENE STYLING ARMEN */
 main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
     content:" ";
     position: absolute;
@@ -287,18 +278,9 @@ main > div > div:where(:nth-of-type(2), :nth-of-type(3)) {
     }
 }
 
+ /* ARM LINKS */
 main > div > div:nth-of-type(2) {
-    animation-name:  --swingArmLinks;
-    animation-duration: var(--ad-arm-links);
-    animation-iteration-count: var(--aIterationCount);
-    animation-timing-function: var( --atimingFunction-linear); 
-}
-
-main > div > div:nth-of-type(3) {
-    animation-name: --swingArmRechts;
-    animation-duration: var(--ad-arm-rechts);
-    animation-iteration-count: var(--aIterationCount);
-    animation-timing-function: var( --atimingFunction-linear); 
+    animation: --swingArmLinks var(--ad-arm-links) var(--aIterationCount) var( --atimingFunction-linear);
 }
 
 @keyframes --swingArmLinks {
@@ -313,6 +295,10 @@ main > div > div:nth-of-type(3) {
     }
 }
 
+ /* ARM RECHTS */
+main > div > div:nth-of-type(3) {
+    animation: --swingArmRechts var(--ad-arm-rechts) var(--aIterationCount) var( --atimingFunction-linear);
+}
 
 @keyframes --swingArmRechts {
     0% {
@@ -341,6 +327,8 @@ main > div > div:nth-of-type(3) {
 /**********************/
 /*    MARK:Styling benen  
 /**********************/
+
+ /* ALGEMENE BEEN STYLING */
 main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
     content: " ";
     width: 30px;
@@ -353,7 +341,7 @@ main > div > div:nth-of-type(4) div, main > div > div:nth-of-type(5) div {
         width: 50px;
     }
 
-      > div > div > div > div > div > div > div > div > div > div {
+    > div > div > div > div > div > div > div > div > div > div {
         animation: none;
 
     }
@@ -366,16 +354,13 @@ main > div > div:where(:nth-of-type(4), :nth-of-type(5)) {
     left: 125px;
 }
 
+ /* RECHTERBEEN */
 main > div > div:nth-of-type(4) {
     z-index: -1;
     div {
-        animation-name: --lopendBeenRechts;
-        animation-duration: var(--ad-been-rechts);
-        animation-iteration-count: var(--aIterationCount);
-        animation-timing-function: var( --atimingFunction-linear);
-        animation-direction: var(--aDirectionAlternate); 
-        animation-delay: var(--aDelay-been-rechts);
-    }}
+         animation: --lopendBeenRechts var(--ad-been-rechts) var(--aIterationCount) var( --atimingFunction-linear) var(--aDirectionAlternate) var(--aDelay-been-rechts);
+    }
+}
 
 @keyframes --lopendBeenRechts {
     0% {
@@ -391,18 +376,15 @@ main > div > div:nth-of-type(4) {
     }
 }
 
+
+ /* LINKERBEEN */
 main > div > div:nth-of-type(5) {
     left: 55px;
 
     div {
-        animation-name: --lopendBeenLinks;
-        animation-duration: var(--ad-been-links);
-        animation-iteration-count: var(--aIterationCount);
-        animation-timing-function: var( --atimingFunction-linear);
-        animation-direction: var(--aDirectionAlternate); 
+        animation: --lopendBeenLinks var(--ad-been-links) var(--aIterationCount) var( --atimingFunction-linear) var(--aDirectionAlternate);
     }
 }
-
 
 @keyframes --lopendBeenLinks {
     0% {
@@ -418,6 +400,32 @@ main > div > div:nth-of-type(5) {
     }
 }
 
+/* MARK: Grond animatie */
+footer {
+    --animation-ground-duration: 4s; 
+    z-index:1;
+    div::after {
+        content: "🌸";
+        font-size: 40px;
+        position: absolute;
+        bottom: 4.5rem;
+        right: 50px;
+        width: 10vw;
+
+        animation: --elementGroundMove var(--animation-ground-duration) infinite linear;
+    }
+}
+
+
+@keyframes --elementGroundMove {
+    from{
+        transform: translateX(110vw);
+    } to {
+        transform: translateX(-100vw);
+    }
+}
+
+
 /**********************/
 /* MARK: range animation */
 /**********************/
@@ -432,6 +440,10 @@ main > div > div:nth-of-type(5) {
     --ad-been-rechts: 3.5s;
     --aDelay-been-rechts: 2s;
     }
+
+    footer {
+        --animation-ground-duration: 10s; 
+    }
 }
 
 @container style(--fastWalk >= 4) {
@@ -443,6 +455,10 @@ main > div > div:nth-of-type(5) {
     --ad-been-rechts: 2.5s;
     --aDelay-been-rechts: 1s;
     }
+
+    footer {
+        --animation-ground-duration: 7s; 
+    }
 }
 
 @container style(--fastWalk >= 6) {
@@ -453,6 +469,10 @@ main > div > div:nth-of-type(5) {
     --ad-been-links:2s;
     --ad-been-rechts: 2s;
     --aDelay-been-rechts: .75s;
+    }
+
+    footer{
+        --animation-ground-duration: 4s; 
     }
 }
 
@@ -466,6 +486,10 @@ main > div > div:nth-of-type(5) {
     --ad-been-rechts: 1.5s;
     --aDelay-been-rechts: .5s;
     }
+
+    footer{
+        --animation-ground-duration: 2s; 
+    }
 }
 
 
@@ -477,5 +501,9 @@ main > div > div:nth-of-type(5) {
     --ad-been-links: 1s;
     --ad-been-rechts: 1s;
     --aDelay-been-rechts: .25s;
+    }
+
+    footer{
+        --animation-ground-duration: .5s; 
     }
 }

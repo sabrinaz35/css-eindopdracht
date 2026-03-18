@@ -3,6 +3,7 @@ html:has([value="vampire"]:checked) {
 }
 
 
+/* MARK: VAMPIER STYLE */
 /* container style queries */
 @container style(--view:vampier) {
     body {
@@ -10,7 +11,6 @@ html:has([value="vampire"]:checked) {
         --color-robot: light-dark(#fafafa, grey);
         --accent-color-1: light-dark(#000, #ce02f1);
         --accent-color-2: light-dark(#e02920, #ce02f1);
-        /* --accent-color-3: #a62e8c; */
         --outer-lines: #181818;
         --color-shadow: light-dark(grey, #000);
 
@@ -31,6 +31,14 @@ html:has([value="vampire"]:checked) {
             rgba(57, 117, 68, 1) 88%, 
             rgba(39, 79, 33, 1) 100%);
 
+         /* FOOTER ANIMATIE CONTENT CHANGE */
+        footer {
+            > div::after {
+                content: "💀";
+            }
+        }
+        
+         /* ANIMATIE IN HEADER */
         h1 {
             color: white;
             font-family: RubicWetPaint, monospace;
@@ -186,6 +194,7 @@ html:has([value="vampire"]:checked) {
 
 
 /* MARK:Keyframes */
+/* Keyframes moeten buiten de style querie anders werkt het niet */
 @keyframes --vampierHoofd {
     0% {
         rotate:0deg;
@@ -200,8 +209,7 @@ html:has([value="vampire"]:checked) {
     }
 }
 
-
- 
+ /* BLOED UIT MOND ANIMATIE */
 @keyframes --blooddropplets {
     0% {
         opacity: 0;
@@ -219,7 +227,6 @@ html:has([value="vampire"]:checked) {
     }
 }
 
-
 @keyframes --vampierBody {
     0% {
         rotate:0deg;
@@ -234,7 +241,7 @@ html:has([value="vampire"]:checked) {
     }
 }
 
-
+/* ARMEN */
 @keyframes --VampierArm {
     0% {
        rotate: 0deg;
@@ -247,7 +254,7 @@ html:has([value="vampire"]:checked) {
     }
 }
 
-
+/* BENEN */
 @keyframes --vampierBeenLinks {
     0% {
         rotate:0deg;
@@ -306,6 +313,8 @@ html:has([value="vampire"]:checked) {
     }
 }
 
+
+/* BLOED UIT LETTERS ANIMATIE */
 @keyframes --letterBloodDropsMove {
     0% {
         opacity: 0;
@@ -323,9 +332,14 @@ html:has([value="vampire"]:checked) {
 
 
 /* MARK: Faster vampire walk */
+/* De snelheid van de vampier is namelijk anders dan de robot zelf */
 @container style(--fastWalk >= 2) {
     body {
         --animation-duration: 4s;
+    }
+
+    footer{
+        --animation-ground-duration: 12s; 
     }
 }
 
@@ -333,11 +347,19 @@ html:has([value="vampire"]:checked) {
     body {
         --animation-duration: 3.25s;
     }
+
+    footer{
+        --animation-ground-duration: 10s; 
+    }
 }
 
 @container style(--fastWalk >= 6) {
     body {
         --animation-duration: 1.75s;
+    }
+
+    footer{
+        --animation-ground-duration: 6s; 
     }
 }
 
@@ -345,10 +367,18 @@ html:has([value="vampire"]:checked) {
     body {
         --animation-duration: 1.5s;
     }
+
+    footer{
+        --animation-ground-duration: 3.5s; 
+    }
 }
 
 @container style(--fastWalk >= 10) {
     body {
         --animation-duration: 1s;
+    }
+
+    footer{
+        --animation-ground-duration: 1.5s; 
     }
 }

@@ -265,12 +265,13 @@ Als laatste had ik het wel onder de knie het aanpassen van de kleuren, dus ik wi
 ### Reflectie
 Toen ik eenmaal bezig was met het maken van dit project had ik in eerste instantie alles onder elkaar gezet in mijn html, hier kreeg ik snel al te horen dat het niet handig was en dat ik alles moest nesten. Dit zorgde bij mij ervoor dat ik moest uitvinden en experimenteren met hoe ik dan de vormen moest maken en moest positioneren. Ik wilde geen svg's gebruiken, want ik wilde kijken wat er mogelijk is met css alleen. 
 
-
 Failed. Ik wilde bij de cape van de vampier een golvende lijn maken, en heb wat geprobeerd met de border radius, alleen ik merkte dat ik hiervoor wiskunde nodig zou hebben, ik heb erover nagedacht en in mijn notitieboek een grafiek getekend wat ook die lijn moest worden. Alleen de wiskunde die ik moest gebruiken is al zo weggezakt dat het echt weer een opfriscursus nodig heeft om dat te kunnen doen dat ik heb besloten om te gaan met wat ik nu heb en een andere keer naar de wiskunde te kijken, want daar was nu te kort tijd voor. 
 
 <img src="/readme-images/poging-tot-wiskunde.jpeg" alt="Foto notitieboek logica wiskunde" width="200px">
 
 <img src="/readme-images/cape-vampier.png" alt="Foto van de cape van de vampier" width="200px">
+
+Ook ben ik gestart tijdens dit project met het gebruiken van pixels, ik dacht zelf dat dat handig was met het maken van de animaties. Alleen het is niet geheel responsief, en daarom is het sowieso handiger om rem en em te gebruiken.
 
 Ik ben er door dit project achter gekomen dat je zo ontzettend veel kan bereiken met css op visueel vlak. Bijvoorbeeld die style queries dat vind ik zo iets cools, want het je kan je standaard meteen al zo leuk eruit laten zien. Ook een ander inzicht is dat je heel veel kan bereiken met nesten en de juiste selector kiezen.
 

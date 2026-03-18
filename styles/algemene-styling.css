@@ -3,17 +3,19 @@
     padding: 0;
 }
 
+/**********************/
+/* MARK:BASIS KLEUREN
+/**********************/
 :root {
     color-scheme: light dark;
 
     /* COLORS */
-    --color-outer-eyes: #ff80bf;
-    --color-robot: light-dark(#fafafa, grey);
-    --accent-color-1: light-dark(#ff80bf, #ce02f1);
-    --accent-color-2: #fa439f;
-    --accent-color-3: #a62e8c;
+    --color-outer-eyes: light-dark(#ff80bf, #ed86ff);
+    --color-robot: light-dark(#fccff4, rgb(233, 192, 250));
+    --accent-color-1: light-dark(#ff80bf, #ed86ff);
+    --accent-color-2: light-dark(#fa439f,#fa43f4);
     --outer-lines: #181818;
-    --color-shadow: light-dark(grey, #000); 
+    --color-shadow: light-dark(#da6ca3, #c56ed5); 
     --color-tooth: #cecece;
 
  --background-color:
@@ -48,7 +50,7 @@
 }
 
 /**********************/
-/* MARK:Algemene styling 
+/* MARK:FONTS
 /**********************/
 @font-face {
     /* https://fonts.google.com/selection?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno */
@@ -66,4 +68,75 @@
      /* https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype */
     font-family: Danfo;
     src: url(../fonts/danfo-regular-variable-font.ttf);
+}
+
+
+/**********************/
+/* MARK:BASIC POSITIONERING
+/**********************/
+
+body {
+    overflow: hidden;
+}
+
+main {
+    /* https://cssgradient.io/ */
+    background: var(--background-color);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr  1fr 10fr;
+}
+
+/**********************/
+/*    MARK:STYLING BUTTONS  
+/**********************/
+
+main > form:first-of-type {
+    place-self: center;
+    /* is scale een juiste om te gebruiken of kan ik beter font-size gebruiken? */
+    scale: 1.5; 
+}
+
+main > label{    
+    place-self: center;
+       input[type="range"] {
+            width: 40dvw;
+}
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+}
+
+/**********************/
+/*    MARK:STYLING H1  
+/**********************/
+h1 {
+    /* font-family: Football stage; */
+    font-family: BitcountPropVariabele, FantasyMonospace, monospace;
+    place-self: center;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 300;
+
+    animation: robot-title-animation 6s infinite linear;
+}
+
+@keyframes robot-title-animation {
+    0% {
+        font-variation-settings: "ELXP" 0,"slnt" -8;
+        font-weight: 200;
+    } 50% {
+        font-variation-settings: "ELXP" 77, "slnt" 0;
+        font-weight: 474.75;
+        color: var(--accent-color-2);
+        text-shadow: 1px 1px 20px var(--accent-color-2);
+    } 100% {
+        font-variation-settings: "ELXP" 0,"slnt" -8;
+        font-weight: 200;
+    }
 }
