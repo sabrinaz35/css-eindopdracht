@@ -147,6 +147,18 @@ Tijdens het voortgansgesprek zat ik vandaag bij Nils omdat ik had gewisseld met 
 - Delay misschien gebruiken voor het standaard lopen voor het andere been, of iets daarmee doen. Dit zou misschien voor dit project niet helemaal handig zijn.
 - En als laatste had ik gevraagd of ik bij postion absolute beter kan werken met percentages of met px. Hij zei dat je zodra je dan de torso vergroot dat de rest op de juiste punten mee vergroten/verplaatsen. Maar dat dat iets zou zijn voor de toekomst.
 
+Daarnaast ben ik voornamelijk bezig geweest met de styling van de robot en ben ik van plan om volgende week pas een start te maken aan mijn loopje van mijn vampier en het maken ervan, omdat er dan een workshop is voor container queries waar ik baat bij kan hebben.
+
+Ook heb ik besloten om van mijn orginele idee af te stappen, dat was het maken van een animatie waar de robot over de stenen heen liep, een dronken robot en een vampier robot. Maar dat was toch iets te ambitieus, dus ben ik gegaan voor een vampier en een krab. Die anders gestyled zijn en anders lopen. 
+
+Ook heb ik deze week geexperimenteerd met de selectoren waarbij sommige te algemeen waren, waardoor ineens alle checkboxes de zelfde animatie hadden wanneer ze gechecked waren, dus daar moest ik nog even goed naar kijken.
+
+De uitdaging van volgende week zit hem in de verschillende thema's en de animaties daarop aanpassen. 
+
+Ook heb ik besloten deze week omdat mijn css best wel lang werd om deze op te gaan delen, zo kan ik uiteindelijk per thema een eigen bestand hebben en het makkelijker terug vinden.
+
+<img src="/readme-images/mappenstructuur-css.png" alt="robot met vampier tanden" width="200px">
+
 
 ## Checkout 3: 11 maart
 Deze checkout doe ik met Maja. 
@@ -157,6 +169,9 @@ Vandaag ben ik bezig geweest met de container style queries, waarbij ik een star
 <img src="/readme-images/vampire-teeth-robot.png" alt="robot met vampier tanden" width="200px">
 
 Ook heb ik de code van de rechterarm gefixt, waardoor deze nu achter het lichaam staat.
+
+Voor de flow van de vampier en de krab heb ik de stappen uitgetekend, zodat het makkelijker wordt om de uiteindelijke animatie te maken.
+<img src="/readme-images/foto-flow-animaties.jpeg" alt="Foto van flow hoe de animatie moet lopen" width="200px">
 
 ### Hoelang heeft dat geduurd?
 - 09:30 - 10:30 check in met uitleg over verschillende syntaxen binnen kleur
@@ -211,6 +226,60 @@ Dit werkte alleen niet helemaal dus ben ik bezig geweest me de cape van de robot
 Deze week had ik mijn vampier loopje af en ben ik begonnen aan mijn krab. Als feedback kreeg ik op mijn design dat ik nog een leuke titel moest bedenken en ik moet bloed toevoegen aan mijn vampier.
 
 Verder moet ik nog kijken naar de animatie van mijn krab, de checkboxes op het lichaam van de robot aanvinken en dan wat laten doen, en de titel animeren.
+
+<img src="/readme-images/tussenstand-zonder-font.png" alt="robot met vampier tanden" width="200px">
+
+Ik heb geexperimenteerd deze week met de verschillende animaties en dit ging wel goed, alleen ik liep nog steeds tegen verschillende syntaxen aan. Zoals hoe ik het juiste element aan moest spreken bij de benen, uiteindelijk is het een kwestie van proberen en dan werkt het wel.
+
+Een van de inzichten die ik heb gekregen deze weken was dat je heel veel kan doen met ::before en ::after en dat ik daarmee ook veel heb geprobeerd. Je kan er gewoon eigenlijk bewijzen van een nieuw element in je prototype stoppen zonder er iets aan toe te voegen in je html.
+
+<img src="/readme-images/tussentijds-2.png" alt="robot met vampier tanden" width="200px">
+
+Zo heb ik deze week ook met ::before en ::after de tanden van de vampier gemaakt, met de container queries.
+
+Dit was ook een uitdaging deze week, omdat hij het in eerste instantie niet helemaal deedt. 
+
+<img src="/readme-images/start-link-style-querie.png" alt="robot met vampier tanden" width="200px">
+
+Hierboven zie je wat het hoort te zijn, maar daar had ik body staan, daarom kon ik verder in de style querie niet veel aanpassen, want dan pakt hij de body als geheel zogezegd.
+
+Die style queries zijn wel onztzettend handig om een deel van je code aan te kunnen passen zoals je wilt. Zodra je de opzet van de querie hebt neergezet kan je zo alles verder invullen net zoals je met een gewoon css bestandje doet.
+
+Volgende week liggen mijn uitdagingen in het kiezen van een titel en daarbij een passende animatie maken, het mooier maken van de krab animatie en bloed toevoegen aan de vampier.
+
+## Weekly checkout 4: eindreflectie
+### Mijn eindproduct
+Uiteindelijk is mijn eindproduct een silly walk geworden met een identiteitscrisis, je kan de identiteit van de robot aanpassen met buttons en deze ook sneller laten lopen.
+
+De verschillende thema's hebben een look wat bij het thema past, en daarbij ook een passende silly walk, wat bij de character past.
+
+Eerst om in te komen ben ik gegaan voor een standaard robot, om te kijken hoe het uberhaupt werkt met het maken van een figuur met alleen css.
+<img src="/readme-images/" alt="Foto van eindthema robot" width="200px">
+
+Dat maken van een robot verliep eigenlijk wel goed en ben ik doorgegaan met het maken van een vampier aan de hand van de style queries. De uitdaging hier lag in het kijken naar de elementen die al bestaan en het dan aanpassen, maar toch kijken naar hoe ik de huidige elementen kan gebruiken.
+<img src="/readme-images/" alt="Foto van eindthema vampier" width="200px">
+
+Als laatste had ik het wel onder de knie het aanpassen van de kleuren, dus ik wilde de robot ook daadwerkelijk op een krab laten lijken. En dat is gelukt.
+<img src="/readme-images/" alt="Foto van eindthema krab" width="200px">
+
+### Reflectie
+Toen ik eenmaal bezig was met het maken van dit project had ik in eerste instantie alles onder elkaar gezet in mijn html, hier kreeg ik snel al te horen dat het niet handig was en dat ik alles moest nesten. Dit zorgde bij mij ervoor dat ik moest uitvinden en experimenteren met hoe ik dan de vormen moest maken en moest positioneren. Ik wilde geen svg's gebruiken, want ik wilde kijken wat er mogelijk is met css alleen. 
+
+
+Failed. Ik wilde bij de cape van de vampier een golvende lijn maken, en heb wat geprobeerd met de border radius, alleen ik merkte dat ik hiervoor wiskunde nodig zou hebben, ik heb erover nagedacht en in mijn notitieboek een grafiek getekend wat ook die lijn moest worden. Alleen de wiskunde die ik moest gebruiken is al zo weggezakt dat het echt weer een opfriscursus nodig heeft om dat te kunnen doen dat ik heb besloten om te gaan met wat ik nu heb en een andere keer naar de wiskunde te kijken, want daar was nu te kort tijd voor. 
+
+<img src="/readme-images/poging-tot-wiskunde.jpeg" alt="Foto notitieboek logica wiskunde" width="200px">
+
+<img src="/readme-images/cape-vampier.png" alt="Foto van de cape van de vampier" width="200px">
+
+Ik ben er door dit project achter gekomen dat je zo ontzettend veel kan bereiken met css op visueel vlak. Bijvoorbeeld die style queries dat vind ik zo iets cools, want het je kan je standaard meteen al zo leuk eruit laten zien. Ook een ander inzicht is dat je heel veel kan bereiken met nesten en de juiste selector kiezen.
+
+Dat is ook meteen een van de punten waar ik echt trots op ben. De verschillende themas en de verschillende silly-walks die ik heb gemaakt in de korte tijd die wij hadden. Ook ben ik trots op de manier waarop ik dingen geprobeerd heb met de ::before en ::after. 
+
+Alleen als ik eerlijk ben kan ik nog wel mijn experimenten wat meer vastleggen in mijn readme, want ik heb het gevoel dat ik veel meer geexperimenteerd heb dan dat ik hier nu laat zien.
+
+In de toekomst wil ik nog verder experimenteren met css en kijken wat er daarnaast nog meer mogelijk is, ik denk dat er ook veel meer elementen en mogleijkheden zijn die ik nu nog niet weet. Daarom ben ik wel blij dat die eis er was met nesting en style queries, zo leer je iets nieuws en iets handigs bij. Wellicht wil ik mij ook meer verdiepen in de wiskunde, maar dan meer in mijn vrij tijd, dan kan ik er even rustig voor gaan zitten. 
+
 
 
 ## Bronnen
