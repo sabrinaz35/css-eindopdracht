@@ -41,7 +41,7 @@ html:has([value="vampire"]:checked) {
                     position: absolute;
                     font-size: 15px;
                     bottom: 5px;
-
+                    opacity: 0;
                     animation: --letterBloodDropsMove  6s infinite linear;
             
             }

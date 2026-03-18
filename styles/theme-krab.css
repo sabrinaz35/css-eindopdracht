@@ -25,13 +25,31 @@ html:has([value="krab"]:checked) {
         --animation-duration-krab: 4s;
 
 
-        &::after {
+        footer {
+            width: 100%;
+            position: absolute;
+            height: 100px;
+            bottom: 0;
+        }
+
+        footer div::after {
             content: "🐚";
             font-size: 40px;
             position: absolute;
-            bottom: 50px;
-            right: 100px;
+            bottom: 30px;
+            right: 50px;
+            width: 10vw;
+
         }
+
+
+        footer:hover {
+    
+            animation: --easterEggKrab 8s linear;
+            div::after {
+                content: "🦀";
+                position: absolute;
+            }}
     }
 
     h1 {
@@ -303,6 +321,14 @@ html:has([value="krab"]:checked) {
         opacity: 1;
         font-size: 50px;
         rotate: 0deg;
+    }
+}
+
+@keyframes --easterEggKrab{
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(100px);
     }
 }
 
