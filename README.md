@@ -283,12 +283,15 @@ Uiteindelijk is mijn eindproduct een silly walk geworden met een identiteitscris
 De verschillende thema's hebben een look wat bij het thema past, en daarbij ook een passende silly walk, wat bij de character past.
 
 Eerst om in te komen ben ik gegaan voor een standaard robot, om te kijken hoe het uberhaupt werkt met het maken van een figuur met alleen css.
+
 <img src="/readme-images/standard-robot-final.png" alt="Foto van eindthema robot" width="200px">
 
 Dat maken van een robot verliep eigenlijk wel goed en ben ik doorgegaan met het maken van een vampier aan de hand van de style queries. De uitdaging hier lag in het kijken naar de elementen die al bestaan en het dan aanpassen, maar toch kijken naar hoe ik de huidige elementen kan gebruiken.
+
 <img src="/readme-images/vampire-robot-final.png" alt="Foto van eindthema vampier" width="200px">
 
 Als laatste had ik het wel onder de knie het aanpassen van de kleuren, dus ik wilde de robot ook daadwerkelijk op een krab laten lijken. En dat is gelukt.
+
 <img src="/readme-images/krab-robot-final.png" alt="Foto van eindthema krab" width="200px">
 
 ### Reflectie
