@@ -260,7 +260,9 @@ Vandaag heb ik de checkout gedaan met Dylan.
 ### Wat heb ik gedaan?
 - Ik heb easter eggs eraan toegevoegd door een schelp te veranderen in een krab en die weg te laten lopen als je eroverheen hovert. 
 - Ik heb een achtergrond animatie met bomen en bloemen toegevoegd waardoor het lijkt alsof hij echt loopt. Dat geeft ook meteen een dieper effect aan de hele scene.
+  
 <img src="/readme-images/background-animation.png" alt="achtergrond animatie" width="200px">
+
 - Mijn font werkte niet in github, hij vond hem in het netwerk ook niet. Nienke had meegekeken alleen die kon het ook niet cinden, dus toch maar weer naar Sanne gegaan.
 
 
@@ -333,7 +335,7 @@ Daarnaast had ik mij misschien nog meer willen verdiepen in hoe je het beste cus
 Naast de gebruikte bronnen heb ik hulp gehad van Sanne, Nienke en Vasilis bij sommige onderdelen.
 
 Color pallete inspo robot:
-https://kr.pinterest.com/pin/634655772531876820/
+- https://kr.pinterest.com/pin/634655772531876820/
 
 Fonts: 
 - https://fonts.google.com/download/next-steps?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno 
@@ -355,4 +357,9 @@ Border-radius:
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color 
 
 scalex()
-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleX 
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scaleX
+
+Extra research naar loopjes:
+Even extra research gedaan voordat ik de schetsen ging maken voor de krabwalk
+- https://schooltv.nl/video-item/hoe-loopt-een-krab-zijwaarts-over-het-strand-en-in-het-water
+
