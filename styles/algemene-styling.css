@@ -126,6 +126,7 @@ h1 {
     animation: robot-title-animation 6s infinite linear;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings */
 @keyframes robot-title-animation {
     0% {
         font-variation-settings: "ELXP" 0,"slnt" -8;

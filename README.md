@@ -337,10 +337,16 @@ Naast de gebruikte bronnen heb ik hulp gehad van Sanne, Nienke en Vasilis bij so
 Color pallete inspo robot:
 - https://kr.pinterest.com/pin/634655772531876820/
 
+Emoji's:
+- https://emojipedia.org/nl
+- Veel andere emojis heb ik gewoon met de emoji keyboard gedaan van mac
+
 Fonts: 
 - https://fonts.google.com/download/next-steps?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno 
 - https://fonts.google.com/specimen/Rubik+Wet+Paint?categoryFilters=Seasonal:%2FSeasonal%2FHalloween
 - https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype  
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings
 
 Gradients:
 - https://cssgradient.io/
