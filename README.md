@@ -33,7 +33,9 @@ handige links opgezocht voor mijn eindopdracht:
 https://codepen.io/mdusmanansari/pen/NWgjZWO 
 
 Schetsen gemaakt over hoe ik het wil hebben.
+
 <img src="/readme-images/schets-pagina-1.jpeg" alt="Eerste schetsen" width="200px">
+
 <img src="/readme-images/schets-pagina-2gedraait.jpeg.jpeg" alt="Eerste schetsen" width="200px">
 
 
@@ -76,7 +78,8 @@ Uiteindelijk ben ik vrijdag zoals ik al zei bezig geweest aan de html en heb ik 
 
 <img src="/readme-images/tussenstand-20feb.png" alt="achtergrond met gradient light" width="200px">
 
-Ook heb ik een darkmode al toegeveogd
+Ook heb ik een darkmode al toegevoegd
+
 <img src="/readme-images/tussenstand-20feb-dark.png" alt="achtergrond met gradient dark" width="200px">
 
 Uiteindelijk wat ik had in mijn html code wat ik nog moet gaan aanpassen op basis van de feedback:
@@ -171,6 +174,7 @@ Vandaag ben ik bezig geweest met de container style queries, waarbij ik een star
 Ook heb ik de code van de rechterarm gefixt, waardoor deze nu achter het lichaam staat.
 
 Voor de flow van de vampier en de krab heb ik de stappen uitgetekend, zodat het makkelijker wordt om de uiteindelijke animatie te maken.
+
 <img src="/readme-images/foto-flow-animaties.jpeg" alt="Foto van flow hoe de animatie moet lopen" width="200px">
 
 ### Hoelang heeft dat geduurd?
@@ -294,43 +298,50 @@ Als laatste had ik het wel onder de knie het aanpassen van de kleuren, dus ik wi
 
 <img src="/readme-images/krab-robot-final.png" alt="Foto van eindthema krab" width="200px">
 
-### Reflectie
-Toen ik eenmaal bezig was met het maken van dit project had ik in eerste instantie alles onder elkaar gezet in mijn html, hier kreeg ik snel al te horen dat het niet handig was en dat ik alles moest nesten. Dit zorgde bij mij ervoor dat ik moest uitvinden en experimenteren met hoe ik dan de vormen moest maken en moest positioneren. Ik wilde geen svg's gebruiken, want ik wilde kijken wat er mogelijk is met css alleen. 
+Voor de twee achitectuur technieken ben ik gegaan voor het nesten en de style querie.
 
-Failed. Ik wilde bij de cape van de vampier een golvende lijn maken, en heb wat geprobeerd met de border radius, alleen ik merkte dat ik hiervoor wiskunde nodig zou hebben, ik heb erover nagedacht en in mijn notitieboek een grafiek getekend wat ook die lijn moest worden. Alleen de wiskunde die ik moest gebruiken is al zo weggezakt dat het echt weer een opfriscursus nodig heeft om dat te kunnen doen dat ik heb besloten om te gaan met wat ik nu heb en een andere keer naar de wiskunde te kijken, want daar was nu te kort tijd voor. 
+### Reflectie
+Toen ik eenmaal bezig was met het maken van dit project had ik in eerste instantie alles onder elkaar gezet in mijn html, hier kreeg ik snel al te horen dat het niet handig was en dat ik alles moest nesten. Dit zorgde bij mij ervoor dat ik moest uitvinden en experimenteren met hoe ik dan de vormen moest maken en moest positioneren. Ik wilde geen svg's gebruiken, want ik wilde kijken wat er mogelijk is met css alleen en dit sluit tevens ook mooi aan op een van de leerdoelen die ik tijdens sprint 0 voor mijzelf had gevormd.
+
+Sommige dingen gingen niet zonder slag of stoot. Ik wilde bij de cape van de vampier een golvende lijn maken, en heb wat geprobeerd met de border radius, alleen ik merkte dat ik hiervoor wiskunde nodig zou hebben, ik heb erover nagedacht en in mijn notitieboek een grafiek getekend wat ook die lijn moest worden. Alleen de wiskunde die ik moest gebruiken is al zo weggezakt dat het echt weer een opfriscursus nodig heeft om dat te kunnen doen dat ik heb besloten om te gaan met wat ik nu heb en een andere keer naar de wiskunde te kijken, want daar was nu te kort tijd voor. 
 
 <img src="/readme-images/poging-tot-wiskunde.jpeg" alt="Foto notitieboek logica wiskunde" width="200px">
 
 <img src="/readme-images/cape-vampier.png" alt="Foto van de cape van de vampier" width="200px">
 
-Ook ben ik gestart tijdens dit project met het gebruiken van pixels, ik dacht zelf dat dat handig was met het maken van de animaties. Alleen het is niet geheel responsief, en daarom is het sowieso handiger om rem en em te gebruiken.
+Ik ben er door dit project achter gekomen dat je zo ontzettend veel kan bereiken met css op visueel vlak. Bijvoorbeeld die style queries dat vind ik zo iets cools, want het je kan je standaard meteen al zo leuk eruit laten zien. Ook een ander inzicht is dat je heel veel kan bereiken met nesten en de juiste selector kiezen. En de combinatie van het nesten en de selectoren daar kan je naar mijn idee zoveel meer mee dan dat je er classes voor zou gebruiken. Het was een uitdaging om het zonder te doen, maar des te trotser ben ik op het eindresultaat.
 
-Ik ben er door dit project achter gekomen dat je zo ontzettend veel kan bereiken met css op visueel vlak. Bijvoorbeeld die style queries dat vind ik zo iets cools, want het je kan je standaard meteen al zo leuk eruit laten zien. Ook een ander inzicht is dat je heel veel kan bereiken met nesten en de juiste selector kiezen.
+Dat is ook meteen een van de punten waar ik echt trots op ben. De verschillende themas en de verschillende silly-walks die ik heb gemaakt in de korte tijd die wij hadden. Ook ben ik trots op de manier waarop ik dingen geprobeerd heb met de ::before en ::after en de nieuwe technieken heb toegepast.
 
-Dat is ook meteen een van de punten waar ik echt trots op ben. De verschillende themas en de verschillende silly-walks die ik heb gemaakt in de korte tijd die wij hadden. Ook ben ik trots op de manier waarop ik dingen geprobeerd heb met de ::before en ::after. 
+#### In de toekomst
+Alleen als ik eerlijk ben kan ik nog wel mijn experimenten wat meer vastleggen in mijn readme, want ik heb het gevoel dat ik veel meer geexperimenteerd heb dan dat ik hier nu laat zien. Het zijn vaak kleine aanpassingen die ik tijdens het maken heb gedaan en gewoon geprobeerd, maar omdat het dan werkt vergeet je het oude vast te leggen.
 
-Alleen als ik eerlijk ben kan ik nog wel mijn experimenten wat meer vastleggen in mijn readme, want ik heb het gevoel dat ik veel meer geexperimenteerd heb dan dat ik hier nu laat zien.
+In de toekomst wil ik nog verder experimenteren met css en kijken wat er daarnaast nog meer mogelijk is, ik denk dat er ook veel meer elementen en mogelijkheden zijn die ik nu nog niet weet. Daarom ben ik wel blij dat die eis er was met nesting en style queries, zo leer je iets nieuws en iets handigs bij. Wellicht wil ik mij ook meer verdiepen in wiskunde, maar dan meer in mijn vrij tijd, dan kan ik er even rustig voor gaan zitten. 
 
-In de toekomst wil ik nog verder experimenteren met css en kijken wat er daarnaast nog meer mogelijk is, ik denk dat er ook veel meer elementen en mogleijkheden zijn die ik nu nog niet weet. Daarom ben ik wel blij dat die eis er was met nesting en style queries, zo leer je iets nieuws en iets handigs bij. Wellicht wil ik mij ook meer verdiepen in de wiskunde, maar dan meer in mijn vrij tijd, dan kan ik er even rustig voor gaan zitten. 
+Ook ben ik gestart tijdens dit project met het gebruiken van pixels, ik dacht zelf dat dat handig was met het maken van de animaties. Alleen het is niet geheel responsieve unit, en daarom is het sowieso handiger om rem en em te gebruiken. Alhoewel ik het alleen voor de robot heb gerbuikt heeft het verder geen effect op de responsiveness van mijn site zelf.
+
+Als laatste wil ik ook meer stil gaan staan bij het benoemen van custom properties en keyframes, ik heb nu gekozen voor een voor mij logische benaming waarin ik ook het element benoem waar het voor bedoelt is, maar ik merkt dat ik daar soms ook wel tegenaanliep en wat meer mee moet oefenen. Door bijvoorbeeld aan medestudenten te vragen of het logisch klinkt en zij het ook meteen begrijpen met wat ik met een benaming bedoel.
+
 
 ### Als ik meer tijd had...
-Ik ben trots op wat ik heb gemaakt, maar als er wat meer tijd en ruimte was geweest had ik mij toch wat meer willen verdiepen in de gradients, ik heb nu een gradient gemaakt voor de scharen van de krab en ik ben benieuwd of daar nog meer mogelijk mee is. 
+Ik ben trots op wat ik heb gemaakt, maar als er wat meer tijd en ruimte was geweest had ik mij toch wat meer willen verdiepen in de gradients, ik heb nu een gradient gemaakt voor de scharen van de krab en ik ben benieuwd of daar nog meer mogelijk mee is en hoe ver je daar mee kan gaan in het maken van een animatie.
 
-Daarnaast had ik mij misschien nog meer willen verdiepen in hoe je het beste custom properties kan inzetten bij style queries en verschillende bestanden css, soms vond ik dit namelijk nog best verwarrend.
+Daarnaast had ik mij misschien nog meer willen verdiepen in hoe je het beste custom properties kan inzetten bij style queries en verschillende bestanden css, soms vond ik dit namelijk nog best verwarrend. Waar zet je die custom properties het beste in en hoe je dit voor jezelf en voor andere ook overzichtelijk houdt.
+
 
 ## Bronnen
+Naast de gebruikte bronnen heb ik hulp gehad van Sanne, Nienke en Vasilis bij sommige onderdelen.
+
 Color pallete inspo robot:
 https://kr.pinterest.com/pin/634655772531876820/
 
 Fonts: 
-- https://www.1001fonts.com/football-stage-demo-font.html
-- https://www.1001fonts.com/fantasque-sans-mono-font.html 
 - https://fonts.google.com/download/next-steps?categoryFilters=Technology:%2FTechnology%2FVariable;Feeling:%2FExpressive%2FInnovative;Appearance:%2FTheme%2FTechno 
 - https://fonts.google.com/specimen/Rubik+Wet+Paint?categoryFilters=Seasonal:%2FSeasonal%2FHalloween
 - https://fonts.google.com/specimen/Danfo?categoryFilters=Technology:%2FTechnology%2FVariable;Appearance:%2FTheme%2FWoodtype  
 
-Gradient:
-- https://cssgradient.io/ 
+Gradients:
+- https://cssgradient.io/
 - https://developer.mozilla.org/en-US/docs/Web/- CSS/Reference/Values/gradient/radial-gradient 
 - https://www.youtube.com/watch?v=cWgb42tUYPA 
 - https://www.youtube.com/watch?v=XMEX9_HvW2k&t=2s
@@ -339,7 +350,7 @@ CSS elementen:
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme 
 - https://bennettfeely.com/clippy/ 
 
-Border-radius generator:
+Border-radius:
 - https://9elements.github.io/fancy-border-radius/#35.51.35.51--500.400 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-top-color 
 
