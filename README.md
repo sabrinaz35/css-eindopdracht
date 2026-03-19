@@ -348,6 +348,10 @@ Fonts:
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings
 
+Om erachter te komen wat de variabele font allemaal kan doen.
+- https://wakamaifondue.com/ 
+
+
 Gradients:
 - https://cssgradient.io/
 - https://developer.mozilla.org/en-US/docs/Web/- CSS/Reference/Values/gradient/radial-gradient 

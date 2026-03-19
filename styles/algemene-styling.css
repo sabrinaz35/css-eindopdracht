@@ -127,6 +127,7 @@ h1 {
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings */
+/* https://wakamaifondue.com/ */
 @keyframes robot-title-animation {
     0% {
         font-variation-settings: "ELXP" 0,"slnt" -8;
