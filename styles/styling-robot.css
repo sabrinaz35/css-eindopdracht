@@ -524,7 +524,7 @@ footer {
         --animation-ground-duration: .5s; 
     }
 }
-
+/* 
 @media (width < 448px) {
     main div {
         scale: .3;
@@ -535,4 +535,4 @@ footer {
         font-size: 3rem;
         bottom: 1rem;
     }
-}
+} */
