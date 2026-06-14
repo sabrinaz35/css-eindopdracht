@@ -524,3 +524,15 @@ footer {
         --animation-ground-duration: .5s; 
     }
 }
+
+@container (width < 448px) {
+    main div {
+        scale: .3;
+        margin: -4rem;
+    }
+
+    footer div::before {
+        font-size: 3rem;
+        bottom: 1rem;
+    }
+}
