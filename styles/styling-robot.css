@@ -525,7 +525,7 @@ footer {
     }
 }
 
-@container (width < 448px) {
+@media (width < 448px) {
     main div {
         scale: .3;
         margin: -4rem;
