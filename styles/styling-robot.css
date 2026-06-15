@@ -531,8 +531,18 @@ footer {
         transform-origin: center bottom;
     }
 
-    footer div::before, footer div::before{
-        bottom: 2rem;
+     footer {
+        animation-duration: 8s;
+
+        div {
+            &::before {
+                bottom: 2rem;
+            }
+
+            &::after {
+                bottom: 2rem;
+            }
+        }
     }
 }
 
