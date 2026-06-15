@@ -530,6 +530,10 @@ footer {
         scale: .35;
         transform-origin: center bottom;
     }
+
+    footer div::before, footer div::before{
+        bottom: 2rem;
+    }
 }
 
 @media (width < 448px) {
@@ -540,5 +544,7 @@ footer {
 
     footer div::before, footer div::before{
         bottom: 2rem;
+        animation-duration: 8s;
+        transform: translateX(110vw) translateY(-2rem);
     }
 }
