@@ -33,7 +33,7 @@ main > div {
     margin-bottom: 3rem;
     width: 12.5rem;
     height: 18.75rem;
-    transform: scale(.65);
+    scale: .65;
     background-position: center bottom;
 
     animation: --torso var(--ad-torso) infinite ease-in-out alternate;
@@ -527,14 +527,14 @@ footer {
 
 @media (max-width: 1200px) {
     main > div {
-        transform: scale(.45);
+        scale: .35;
         transform-origin: center bottom;
     }
 }
 
 @media (width < 448px) {
     main div {
-        transform: scale(.2) !important;
+        scale: .2;
         margin: -4rem;
     }
 
