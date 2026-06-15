@@ -542,7 +542,7 @@ footer {
         margin: -4rem;
     }
 
-    footer div::before, footer div::before{
+    footer div::before, footer div::after{
         bottom: 2rem;
         animation-duration: 8s;
         transform: translateX(110vw) translateY(-2rem);
