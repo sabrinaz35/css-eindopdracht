@@ -542,15 +542,18 @@ footer {
         margin: -4rem;
     }
 
-    footer div::before{
-        bottom: 2rem;
+    footer {
         animation-duration: 8s;
-        transform: translateX(110vw) translateY(-2rem);
+
+        div {
+            &::before {
+                bottom: 2rem;
+            }
+
+            &::after {
+                bottom: 2rem;
+            }
+        }
     }
 
-     footer div::after {
-        bottom: 2rem;
-        animation-duration: 8s;
-        transform: translateX(110vw) translateY(-2rem);
-     }
 }
