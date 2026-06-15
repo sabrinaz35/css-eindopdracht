@@ -538,8 +538,7 @@ footer {
         margin: -4rem;
     }
 
-    /* footer div::before {
-        font-size: 3rem;
-        bottom: 1rem;
-    } */
+    footer div::before {
+        bottom: 2rem;
+    }
 }
